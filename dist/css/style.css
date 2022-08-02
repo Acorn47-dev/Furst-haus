@@ -321,6 +321,11 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media (max-width: 768px) {
+  .about-content {
+    gap: 0px;
+  }
+}
 
 .col {
   display: flex;
@@ -357,6 +362,7 @@
   left: 0;
   z-index: -1;
   position: absolute;
+  white-space: nowrap;
   /* Обводка сзади */
   color: transparent; /* прозрачный цвет букв */
   transform: translate(-30px, -50%);
@@ -370,6 +376,11 @@
   line-height: 23px;
   /* Текст */
   color: #968989;
+}
+@media (max-width: 767px) {
+  .col__about-text {
+    margin-right: 60px;
+  }
 }
 .col__about-img {
   width: 100%;
