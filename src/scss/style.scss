@@ -1,0 +1,63 @@
+@import "fonts";
+@import "header";
+@import "hero";
+$md1: 768px;
+$maxWidthContainer: 1530px;
+
+.container{
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+    padding: 0 29px;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(48, 48, 48) rgb(219, 219, 219);
+    
+  }
+  /* для Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: rgb(219, 219, 219);
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    border: 3px solid rgb(219, 219, 219);
+  }
+
+.wrapper {
+    min-width: 100%;
+    display: flex;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    max-width: $maxWidthContainer;
+}
+
+* {
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 56.88%, rgba(255, 255, 255, 0) 100%);
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+
