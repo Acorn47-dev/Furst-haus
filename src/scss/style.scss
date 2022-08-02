@@ -1,6 +1,7 @@
 @import "fonts";
 @import "header";
 @import "hero";
+@import "about";
 $md1: 768px;
 $maxWidthContainer: 1530px;
 
@@ -57,7 +58,7 @@ body {
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    overflow-y: hidden;
+
 }
 
 
