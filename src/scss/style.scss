@@ -9,6 +9,9 @@ $maxWidthContainer: 1530px;
     max-width: $maxWidthContainer;
     margin: 0 auto;
     padding: 0 29px;
+    @media(max-width: 425px){
+      padding: 0 15px;
+    }
 }
 
 * {

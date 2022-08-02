@@ -2,7 +2,17 @@
     height: 748px;
     width: 100%;
     background-image: url(../img/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+
     margin-bottom: 153px;
+    @media(max-width: 741px){
+        height: 600px;
+    }
+    @media(max-width: 425px){
+        height: 448px;
+    }
 }
 
 .hero-content {
@@ -24,6 +34,14 @@
 
     margin-top: 54px;
     margin-bottom: 132px;
+    @media(max-width: 768px) {
+
+        margin-bottom: 96px;
+    }
+    @media(max-width: 425px) {
+
+        margin-bottom: 75px;
+    }
     // .col-info__list
 
     &__list {}
@@ -121,18 +139,23 @@
 
         @media(max-width: 811px) {
             font-size: 90px;
-            line-height: 99.18%;
-            /* or 89px */
-
-            letter-spacing: 0.03em;
+        }
+        @media(max-width: 768px) {
+            margin-bottom: 29px;
         }
 
         @media(max-width: 740px) {
             font-size: 60px;
-            line-height: 99.18%;
-            /* or 89px */
-
-            letter-spacing: 0.03em;
+        }
+        @media(max-width: 450px) {
+            font-size: 55px;
+        }
+        @media(max-width: 510px) {
+            font-size: 50px;
+        }
+        @media(max-width: 431px) {
+            font-size: 37px;
+            margin-bottom: 17px;
         }
     }
 
@@ -147,6 +170,12 @@
         opacity: 0.8;
         color: #FFFFFF;
         margin-bottom: 48px;
+        @media(max-width: 768px) {
+            margin-bottom: 16px;
+        }
+        @media(max-width: 768px) {
+            margin-bottom: 21px;
+        }
     }
 
     // .col-main__button
@@ -163,5 +192,10 @@
         border: none;
         color: #FFFFFF;
         filter: drop-shadow(0px 0px 24px rgba(214, 75, 88, 0.7));
+        @media(max-width: 425px){
+            width: 196px;
+            height: 46.2px;
+            font-size: 15px;
+        }
     }
 }
