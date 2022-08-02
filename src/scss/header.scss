@@ -84,6 +84,11 @@ border-bottom: 2px solid #D64B58;;
     line-height: 20px;
     text-align: center;
     color: #D64B58;
+    transition: all 0.3s;
+    &:hover{
+        color: #fff;
+        background: #D64B58;
+    }
     transform: translateY(-4px);
     @media(max-width: 768px){
         display: none;

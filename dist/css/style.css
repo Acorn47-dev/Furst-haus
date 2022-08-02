@@ -77,7 +77,12 @@
   line-height: 20px;
   text-align: center;
   color: #D64B58;
+  transition: all 0.3s;
   transform: translateY(-4px);
+}
+.header-feedback:hover {
+  color: #fff;
+  background: #D64B58;
 }
 @media (max-width: 768px) {
   .header-feedback {
@@ -297,7 +302,13 @@
   text-align: center;
   border: none;
   color: #FFFFFF;
+  transition: all 0.3s;
   filter: drop-shadow(0px 0px 24px rgba(214, 75, 88, 0.7));
+}
+.col-main__button:hover {
+  background: #fff;
+  color: #D64B58;
+  filter: drop-shadow(0px 0px 24px #fff);
 }
 @media (max-width: 425px) {
   .col-main__button {
