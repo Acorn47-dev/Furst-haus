@@ -9,6 +9,7 @@
 $md1: 768px;
 $maxWidthContainer: 1530px;
 
+
 .container{
     max-width: $maxWidthContainer;
     margin: 0 auto;
@@ -69,3 +70,43 @@ body {
 }
 
 
+.section-number {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 18px;
+  
+  color: #D64B58;
+  margin-bottom: 18px;
+}
+.title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 41px;
+  /* identical to box height */
+  position: relative;
+  
+  /* Основной цвет */
+  
+  color: #322123;
+  margin-bottom: 45px;
+}
+.title-alpha {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109px;
+  /* identical to box height */
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  white-space: nowrap;
+  /* Обводка сзади */
+  color: transparent; /* прозрачный цвет букв */
+  transform: translate(-30px, -50%);
+  -webkit-text-stroke: 2px #F0E1E1;
+}
