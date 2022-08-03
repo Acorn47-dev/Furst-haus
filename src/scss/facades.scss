@@ -1,0 +1,104 @@
+.facades {
+    background-image: url(../img/facades-background.jpg);
+    margin-bottom: 153px;
+height: 674px;
+@media(max-width: 1370px){
+    height: 100%;
+}
+text-align: end;
+}
+.container {
+}
+.col {
+
+    // .col__facades-text
+
+    &__facades-text {
+
+        font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 23px;
+
+color: #FFFFFF;
+max-width: 470px;
+width: 100%;
+opacity: 0.8;
+
+@media(max-width: 1370px){
+    margin-bottom: 46px;
+}
+@media(max-width: 860px){
+    margin-bottom: 45px;
+}
+    }
+}
+
+.facades-content {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    @media(max-width: 876px){
+         flex-direction: column;
+         align-items: flex-end;
+         justify-content: flex-end;
+
+    }
+    flex-direction: row-reverse;
+    justify-content: space-between;
+		// .facades-content__col
+        @media(max-width: 1370px){
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+}
+
+
+.facades-col {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    
+position: relative;
+
+
+		// .facades-col__block
+        @media(max-width: 860px){
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            overflow-x: auto;
+            padding-bottom: 52px;
+            gap: 0px;
+        }
+		&__block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 137px;
+            height: 137px;
+            background: #222222;
+            @media(max-width: 860px){
+                margin-right: 30px;
+            }
+            @media(max-width: 768px){
+                width: 121.09px;
+height: 121.22px;
+            }
+		}
+}
+.facades-block {
+    width: 137.86px;
+    height: 138px;
+		// .facades-block__img
+
+		&__img {
+            width: 99.3%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+		}
+}

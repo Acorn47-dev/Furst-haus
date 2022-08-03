@@ -536,6 +536,10 @@
   background: #222222;
 }
 
+.history {
+  margin-bottom: 150px;
+}
+
 .history-list {
   margin-bottom: 30px;
   display: grid;
@@ -712,6 +716,109 @@
   flex-grow: 0;
 }
 
+.facades {
+  background-image: url(../img/facades-background.jpg);
+  margin-bottom: 153px;
+  height: 674px;
+  text-align: end;
+}
+@media (max-width: 1370px) {
+  .facades {
+    height: 100%;
+  }
+}
+
+.col__facades-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #FFFFFF;
+  max-width: 470px;
+  width: 100%;
+  opacity: 0.8;
+}
+@media (max-width: 1370px) {
+  .col__facades-text {
+    margin-bottom: 46px;
+  }
+}
+@media (max-width: 860px) {
+  .col__facades-text {
+    margin-bottom: 45px;
+  }
+}
+
+.facades-content {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+@media (max-width: 876px) {
+  .facades-content {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 1370px) {
+  .facades-content {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+.facades-col {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  position: relative;
+}
+@media (max-width: 860px) {
+  .facades-col {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    padding-bottom: 52px;
+    gap: 0px;
+  }
+}
+.facades-col__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 137px;
+  height: 137px;
+  background: #222222;
+}
+@media (max-width: 860px) {
+  .facades-col__block {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .facades-col__block {
+    width: 121.09px;
+    height: 121.22px;
+  }
+}
+
+.facades-block {
+  width: 137.86px;
+  height: 138px;
+}
+.facades-block__img {
+  width: 99.3%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 .container {
   max-width: 1530px;
   margin: 0 auto;
@@ -723,25 +830,21 @@
   }
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgb(48, 48, 48) rgb(219, 219, 219);
-}
-
-/* для Chrome/Edge/Safari */
 *::-webkit-scrollbar {
-  height: 12px;
-  width: 12px;
+  width: 10px;
+  height: 10px; /* ширина scrollbar */
 }
 
 *::-webkit-scrollbar-track {
-  background: rgb(219, 219, 219);
+  background: #FFFFFF;
+  opacity: 0.23;
+  border-radius: 31px; /* цвет дорожки */
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(48, 48, 48);
-  border-radius: 20px;
-  border: 3px solid rgb(219, 219, 219);
+  background-color: #D64B58; /* цвет плашки */
+  border-radius: 20px; /* закругления плашки */
+  border: 1.5px solid #FFFFFF; /* padding вокруг плашки */
 }
 
 .wrapper {

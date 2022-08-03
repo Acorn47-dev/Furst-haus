@@ -5,6 +5,7 @@
 @import "advantages";
 @import "partners";
 @import "history";
+@import "facades";
 
 $md1: 768px;
 $maxWidthContainer: 1530px;
@@ -19,24 +20,20 @@ $maxWidthContainer: 1530px;
     }
 }
 
-* {
-    scrollbar-width: thin;
-    scrollbar-color: rgb(48, 48, 48) rgb(219, 219, 219);
-    
-  }
-  /* для Chrome/Edge/Safari */
-  *::-webkit-scrollbar {
-    height: 12px;
-    width: 12px;
-  }
-  *::-webkit-scrollbar-track {
-    background: rgb(219, 219, 219);
-  }
-  *::-webkit-scrollbar-thumb {
-    background-color: rgb(48, 48, 48);
-    border-radius: 20px;
-    border: 3px solid rgb(219, 219, 219);
-  }
+*::-webkit-scrollbar {
+  width: 10px;  
+  height: 10px;                /* ширина scrollbar */
+}
+*::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  opacity: 0.23;
+  border-radius: 31px;       /* цвет дорожки */
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #D64B58;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 1.5px solid #FFFFFF;  /* padding вокруг плашки */
+}
 
 .wrapper {
     min-width: 100%;
