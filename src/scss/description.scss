@@ -64,6 +64,7 @@ overflow-x: auto;
     &:not(:last-child){
         margin-right: 30px;
     }
+    
     &__number {
         margin-bottom: 2px;
         font-family: 'Open Sans';
@@ -101,6 +102,7 @@ overflow-x: auto;
         overflow-y: scroll;
         height: 115px;
         /* Текст */
+padding-right: 30px;
         width: 390px;
         color: #968989;
     }
@@ -108,4 +110,5 @@ overflow-x: auto;
 
 .description-item-content {
     padding: 45px 40px 75px 40px;
+
 }

@@ -872,6 +872,7 @@
   overflow-y: scroll;
   height: 115px;
   /* Текст */
+  padding-right: 30px;
   width: 390px;
   color: #968989;
 }
