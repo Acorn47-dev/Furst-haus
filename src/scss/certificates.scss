@@ -1,4 +1,9 @@
-.certificates {}
+.certificates {
+    margin-bottom: 163px;
+    @media(max-width: 768px){
+        margin-bottom: 200px;
+    }
+}
 
 .container {}
 
