@@ -1,6 +1,9 @@
 .partners {
     background-image: url(../img/partners-background.jpg);
     margin-bottom: 153px;
+    @media(max-width: 768px){
+        margin-bottom: 169px;
+    }
 }
 .container {
 }
@@ -23,11 +26,17 @@ opacity: 0.8;
 @media(max-width: 876px){
     margin-bottom: 46px;
 }
+@media(max-width: 768px){
+    margin-bottom: 40px;
+}
     }
 }
 
 .partners-content {
     padding: 100px 0;
+    @media(max-width: 768px) {
+        padding: 161px 0px 140px 0;
+    }
     display: flex;
     align-items: center;
     @media(max-width: 876px){
@@ -45,7 +54,10 @@ opacity: 0.8;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
-    
+    @media(max-width: 768px) {
+       row-gap: 21px;
+       column-gap: 53px;
+    }
     @media(max-width: 1215px){
         grid-template-columns: repeat(2,1fr);
     }

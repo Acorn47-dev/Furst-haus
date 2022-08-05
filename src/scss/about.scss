@@ -1,5 +1,8 @@
 .about {
     margin-bottom: 48px;
+    @media(max-width: 768px){
+        margin-bottom: 150px;
+    }
 }
 
 .about-content {
@@ -35,7 +38,6 @@
 		// .col__about-title-alpha
 
 		&__about-title-alpha {
-
 
 		}
 

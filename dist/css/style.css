@@ -327,6 +327,11 @@
 .about {
   margin-bottom: 48px;
 }
+@media (max-width: 768px) {
+  .about {
+    margin-bottom: 150px;
+  }
+}
 
 .about-content {
   display: grid;
@@ -381,6 +386,11 @@
 .advantages {
   margin-bottom: 150px;
 }
+@media (max-width: 768px) {
+  .advantages {
+    margin-bottom: 150px;
+  }
+}
 
 .advantages-content {
   display: flex;
@@ -389,11 +399,22 @@
 .advantages-content__col:not(:last-child) {
   margin-bottom: 32px;
 }
+@media (max-width: 768px) {
+  .advantages-content__col:not(:last-child) {
+    margin-left: 30px;
+    margin-bottom: 34px;
+  }
+}
 
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+}
+@media (max-width: 768px) {
+  .advantages-list {
+    gap: 30px;
+  }
 }
 @media (max-width: 1152px) {
   .advantages-list {
@@ -439,10 +460,20 @@
 .advantages-item__content {
   padding: 88px 68px 65px 51px;
 }
+@media (max-width: 768px) {
+  .advantages-item__content {
+    padding: 88px 68px 96px 51px;
+  }
+}
 .advantages-item__icon {
   margin-bottom: 52px;
   width: 50px;
   height: 50px;
+}
+@media (max-width: 768px) {
+  .advantages-item__icon {
+    margin-bottom: 60px;
+  }
 }
 .advantages-item__icon img {
   display: block;
@@ -467,6 +498,12 @@
   background: black;
   margin-bottom: 21px;
 }
+@media (max-width: 768px) {
+  .advantages-item__line {
+    max-width: 364.54px;
+    width: 100%;
+  }
+}
 .advantages-item__text {
   font-family: "Open Sans";
   font-weight: 400;
@@ -481,6 +518,11 @@
 .partners {
   background-image: url(../img/partners-background.jpg);
   margin-bottom: 153px;
+}
+@media (max-width: 768px) {
+  .partners {
+    margin-bottom: 169px;
+  }
 }
 
 .col__partners-text {
@@ -499,12 +541,22 @@
     margin-bottom: 46px;
   }
 }
+@media (max-width: 768px) {
+  .col__partners-text {
+    margin-bottom: 40px;
+  }
+}
 
 .partners-content {
   padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .partners-content {
+    padding: 161px 0px 140px 0;
+  }
 }
 @media (max-width: 876px) {
   .partners-content {
@@ -517,6 +569,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+@media (max-width: 768px) {
+  .partners-col {
+    row-gap: 21px;
+    column-gap: 53px;
+  }
 }
 @media (max-width: 1215px) {
   .partners-col {
