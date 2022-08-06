@@ -17,7 +17,8 @@ height: 100%;
 .feedback-content__col{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+
     border: 1px solid green;
     background: blue;
     height: 550px;
@@ -28,8 +29,11 @@ height: 100%;
         width: 100%;
     }
 }
-.feedback-content {
+.col-contact__content{
 
+
+}
+.feedback-content {
     display: flex;
     align-items: center;
     justify-content: center;

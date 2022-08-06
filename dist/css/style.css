@@ -817,6 +817,11 @@
     height: 100%;
   }
 }
+@media (max-width: 768px) {
+  .facades {
+    margin-bottom: 205px;
+  }
+}
 
 .col__facades-text {
   font-family: "Open Sans";
@@ -929,6 +934,10 @@
   margin-bottom: 153px;
 }
 
+.description-header {
+  transform: translate(30px, 2px);
+}
+
 .description-list {
   padding-bottom: 30px;
   position: relative;
@@ -996,6 +1005,10 @@
   }
 }
 
+.certificates-header {
+  transform: translateX(-7px);
+}
+
 .certificates-col {
   display: flex;
   height: 1000px;
@@ -1051,7 +1064,7 @@
 .feedback-content__col {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   border: 1px solid green;
   background: blue;
   height: 550px;
