@@ -15,6 +15,10 @@
     @media(max-width: 1500px) {
         grid-template-columns: repeat(1, 1fr);
     }
+    @media(max-width: 768px) {
+        gap: 16px;
+        margin-bottom: 17px;
+    }
 
     // .history-list__item
 
@@ -104,6 +108,9 @@
         /* Второй цвет */
 
         color: #D64B58;
+        @media(max-width: 768px){
+            margin-bottom: -1px;
+        }
 
     }
 
@@ -116,7 +123,9 @@
         font-size: 20px;
         line-height: 27px;
         margin-bottom: 18px;
-
+        @media(max-width: 768px){
+            margin-bottom: 10px;
+        }
         /* Основной цвет */
 
         color: #322123;
@@ -147,7 +156,9 @@
             column-gap: 50px;
             display: flex;
         }
-
+        @media(max-width: 768px){
+            column-gap: 35px;
+        }
         @media(max-width: 690px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -207,6 +218,9 @@
     @media(max-width: 450px){
         width: 290px;
         height: 55px;
+    }
+    @media(max-width: 768px) {
+        transform: translateX(-15.5px);
     }
 }
 

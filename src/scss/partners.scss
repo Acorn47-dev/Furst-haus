@@ -2,7 +2,7 @@
     background-image: url(../img/partners-background.jpg);
     margin-bottom: 153px;
     @media(max-width: 768px){
-        margin-bottom: 169px;
+        margin-bottom: 166px;
     }
 }
 .container {
@@ -55,8 +55,8 @@ opacity: 0.8;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
     @media(max-width: 768px) {
-       row-gap: 21px;
-       column-gap: 53px;
+       row-gap: 24px;
+       column-gap: 54px;
     }
     @media(max-width: 1215px){
         grid-template-columns: repeat(2,1fr);
