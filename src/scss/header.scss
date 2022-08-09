@@ -1,5 +1,8 @@
 .header {
     height: 80px;
+    @media(max-width: 425px){
+        height: 64px;
+    }
     background: #FFFFFF;
 box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
 }
@@ -16,7 +19,11 @@ box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
     &__col {}
 }
 
-.header-logo {}
+.header-logo {
+    @media(max-width: 425px){
+        width: 98px;
+    }
+}
 
 .header-nav {
     height: 100%;

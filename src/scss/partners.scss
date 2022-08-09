@@ -29,6 +29,12 @@ opacity: 0.8;
 @media(max-width: 768px){
     margin-bottom: 40px;
 }
+@media(max-width: 425px){
+    margin-bottom: 57px;
+    max-width: 260px;
+    width: 100%;
+}
+
     }
 }
 
@@ -58,6 +64,10 @@ opacity: 0.8;
        row-gap: 24px;
        column-gap: 54px;
     }
+    @media(max-width: 425px) {
+        row-gap: 30px;
+        column-gap: 20px;
+     }
     @media(max-width: 1215px){
         grid-template-columns: repeat(2,1fr);
     }

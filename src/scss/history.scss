@@ -6,6 +6,9 @@
 
 .history-content-list {}
 
+.history-title{
+    margin-bottom: 74px;
+}
 .history-list {
     margin-bottom: 30px;
     display: grid;
@@ -19,6 +22,11 @@
         gap: 16px;
         margin-bottom: 17px;
     }
+    @media(max-width: 425px) {
+        gap: 31px;
+        margin-bottom:39px;
+    }
+
 
     // .history-list__item
 
@@ -69,6 +77,9 @@
 
         @media(max-width: 1500px) {
             max-width: 100%;
+        }
+        @media(max-width: 425px){
+            min-height: 338px;
         }
 
         img {
@@ -126,6 +137,9 @@
         @media(max-width: 768px){
             margin-bottom: 10px;
         }
+        @media(max-width: 425px){
+            margin-bottom: 20px;
+        }
         /* Основной цвет */
 
         color: #322123;
@@ -166,6 +180,7 @@
 
         @media(max-width: 425px) {
             display: grid;
+            row-gap: 10px;
             grid-template-columns: repeat(1, 1fr);
         }
     }
@@ -221,6 +236,9 @@
     }
     @media(max-width: 768px) {
         transform: translateX(-15.5px);
+    }
+    @media(max-width: 425px) {
+        transform: translateX(0px);
     }
 }
 

@@ -1,5 +1,5 @@
 .certificates {
-    margin-bottom: 163px;
+    margin-bottom: 164.4px;
     @media(max-width: 768px){
         margin-bottom: 200px;
     }
@@ -21,11 +21,14 @@
 
     // .col__certificates-number
 
-    &__certificates-number {}
+    &__certificates-number {
+    }
 
     // .col__certificates-title
 
-    &__certificates-title {}
+    &__certificates-title {
+       
+    }
 
     // .col__certificates-title-alpha
 
@@ -58,6 +61,9 @@
             &:not(:last-child) {
                 margin-right: 0px;
                 margin-bottom: 86px;
+            }
+            &:last-child {
+                margin-top: 63px;
             }
         }
         img {
