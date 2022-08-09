@@ -1,5 +1,8 @@
 .description {
     margin-bottom: 153px;
+    @media(max-width: 425px){
+        margin-bottom: 118px;
+    }
 }
 
 .container {}
@@ -12,6 +15,9 @@
 }
 .description-header{
     transform: translate(30px, 2px);
+    @media(max-width: 425px){
+        transform: translate(0px, 3px);
+    }
 }
 .col {
 
@@ -53,7 +59,10 @@ overflow: hidden;
 height: 100%;
 overflow-x: auto;
     // .description-list__item
-
+    @media(max-width: 425px){
+        transform: translateY(-35px);
+        padding-bottom: 53px;
+    }
     &__item {}
 }
 
@@ -90,6 +99,9 @@ overflow-x: auto;
         line-height: 27px;
         color: #322123;
         margin-bottom: 28px;
+        @media(max-width: 425px){
+            margin-bottom: 0px;
+        }
     }
 
     // .description-item__descr

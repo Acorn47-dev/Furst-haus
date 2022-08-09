@@ -222,10 +222,16 @@
   }
 }
 .info-item__icon svg {
+  fill: #D64B58;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: fill;
+}
+@media (max-width: 619px) {
+  .info-item__icon svg {
+    fill: #ffffff;
+  }
 }
 .info-item__text {
   font-family: "Open Sans";
@@ -240,6 +246,9 @@
   .info-item__text {
     display: none;
   }
+}
+.info-item__text:hover {
+  text-decoration: underline;
 }
 
 .col-main__foreword {
@@ -845,6 +854,12 @@
   text-align: center;
   color: #FFFFFF;
   margin: 0 auto;
+  transition: all 0.3s;
+}
+.history-button:hover {
+  color: #D64B58;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 24px rgba(202, 202, 202, 0.35);
 }
 @media (max-width: 450px) {
   .history-button {
@@ -895,6 +910,11 @@
 @media (max-width: 768px) {
   .facades {
     margin-bottom: 205px;
+  }
+}
+@media (max-width: 425px) {
+  .facades {
+    margin-bottom: 180px;
   }
 }
 
@@ -953,6 +973,12 @@
     margin-bottom: -50px;
   }
 }
+@media (max-width: 425px) {
+  .facades-col__text {
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+}
 
 .facades-col {
   display: grid;
@@ -983,7 +1009,7 @@
   min-width: 137px;
   height: 137px;
   background: #222222;
-  width: 137.86px;
+  width: 138px;
   height: 138px;
 }
 @media (max-width: 767px) {
@@ -998,19 +1024,39 @@
     max-height: 120px;
   }
 }
+@media (max-width: 425px) {
+  .facades-block {
+    min-width: 130px;
+    max-width: 130px;
+    max-height: 130px;
+  }
+}
 .facades-block__img {
   width: 99.3%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
+.facades-block__img svg {
+  fill: white;
+}
 
 .description {
   margin-bottom: 153px;
 }
+@media (max-width: 425px) {
+  .description {
+    margin-bottom: 118px;
+  }
+}
 
 .description-header {
   transform: translate(30px, 2px);
+}
+@media (max-width: 425px) {
+  .description-header {
+    transform: translate(0px, 3px);
+  }
 }
 
 .description-list {
@@ -1021,6 +1067,12 @@
   overflow: hidden;
   height: 100%;
   overflow-x: auto;
+}
+@media (max-width: 425px) {
+  .description-list {
+    transform: translateY(-35px);
+    padding-bottom: 53px;
+  }
 }
 .description-item {
   background: #FFFFFF;
@@ -1051,6 +1103,11 @@
   color: #322123;
   margin-bottom: 28px;
 }
+@media (max-width: 425px) {
+  .description-item__title {
+    margin-bottom: 0px;
+  }
+}
 .description-item__descr {
   font-family: "Open Sans";
   font-style: normal;
@@ -1079,9 +1136,21 @@
     margin-bottom: 200px;
   }
 }
+@media (max-width: 425px) {
+  .certificates {
+    margin-bottom: 252px;
+  }
+}
 
 .certificates-header {
   transform: translateX(-7px);
+  margin-left: 37px;
+}
+@media (max-width: 425px) {
+  .certificates-header {
+    transform: translateX(0px);
+    margin-left: 0px;
+  }
 }
 
 .certificates-col {
@@ -1090,8 +1159,10 @@
   width: 100%;
 }
 .certificates-col__image {
-  width: 470px;
-  height: 667px;
+  max-width: 470px;
+  max-height: 667px;
+  width: 100%;
+  height: 100%;
 }
 .certificates-col__image:not(:last-child) {
   margin-right: 30px;
@@ -1107,6 +1178,15 @@
   }
   .certificates-col__image:last-child {
     margin-top: 63px;
+  }
+}
+@media (max-width: 500px) {
+  .certificates-col__image:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .certificates-col__image:last-child {
+    margin-top: 0px;
   }
 }
 .certificates-col__image img {
@@ -1153,6 +1233,12 @@
   }
 }
 
+@media (max-width: 425px) {
+  .col-contact__content {
+    transform: translateX(14px);
+  }
+}
+
 .feedback-backgrounds {
   display: flex;
   height: 100%;
@@ -1171,11 +1257,19 @@
   width: 50vw;
   height: 100%;
   background-image: url("../img/feedback-background.jpg");
+  background-position: center;
+  background-size: cover;
 }
 @media (max-width: 1152px) {
   .one {
     width: 100vw;
     height: 550px;
+  }
+}
+@media (max-width: 425px) {
+  .one {
+    width: 100vw;
+    height: 683px;
   }
 }
 
@@ -1205,7 +1299,7 @@
 }
 @media (max-width: 1152px) {
   .feedback-content__col {
-    height: 614px;
+    height: 683px;
   }
 }
 
@@ -1215,10 +1309,22 @@
 .contact-list {
   height: 100%;
 }
+@media (max-width: 425px) {
+  .contact-list {
+    margin-top: 40px;
+  }
+}
 .contact-item {
+  position: relative;
+  z-index: 1;
   height: 100%;
   display: flex;
   margin-bottom: 36px;
+}
+@media (max-width: 425px) {
+  .contact-item {
+    margin-bottom: 45px;
+  }
 }
 .contact-item__icon {
   margin-right: 21px;
@@ -1229,6 +1335,10 @@
   display: block;
   object-fit: contain;
 }
+.contact-item__text:hover {
+  text-decoration: underline;
+}
+
 .col-contact__content {
   padding: 120px 0px 100px 0px;
   height: 100%;
@@ -1293,6 +1403,12 @@
     flex-direction: column;
   }
 }
+@media (max-width: 590px) {
+  .footer-top {
+    transform: translateY(-116px);
+    margin-bottom: -12px;
+  }
+}
 @media (max-width: 1152px) {
   .footer-top {
     margin-top: 347px;
@@ -1319,6 +1435,12 @@
   }
 }
 
+@media (max-width: 590px) {
+  .footer-contact__title {
+    margin: 0 auto;
+  }
+}
+
 .footer-contact {
   display: flex;
   align-items: start;
@@ -1328,6 +1450,11 @@
 @media (max-width: 768px) {
   .footer-contact {
     width: 183px;
+  }
+}
+@media (max-width: 590px) {
+  .footer-contact {
+    transform: translate(-3px, 0px);
   }
 }
 .footer-contact__title {
@@ -1350,6 +1477,9 @@
   font-size: 15px;
   line-height: 20px;
   color: #FFFFFF;
+}
+.footer-contact__text:hover {
+  text-decoration: underline;
 }
 
 .footer-links__col {
@@ -1391,6 +1521,11 @@
     margin-right: 0px;
   }
 }
+@media (max-width: 590px) {
+  .footer-links__col {
+    transform: translateY(26px);
+  }
+}
 .footer-links__title {
   margin-bottom: 25px;
 }
@@ -1406,6 +1541,9 @@
 }
 .footer-links__link:not(:last-child) {
   margin-bottom: 16px;
+}
+.footer-links__link:hover {
+  text-decoration: underline;
 }
 
 .footer-title {
@@ -1427,6 +1565,11 @@
 @media (max-width: 590px) {
   .footer-certificates__col {
     align-items: center;
+  }
+}
+@media (max-width: 590px) {
+  .footer-certificates__col {
+    transform: translateY(53px);
   }
 }
 .footer-certificates__title {
@@ -1477,11 +1620,16 @@
 }
 @media (max-width: 590px) {
   .footer-logo {
-    transform: translate(-50%, -723px);
+    transform: translate(-50%, -820px);
   }
 }
 .footer-logo__img {
   margin-bottom: 22px;
+}
+@media (max-width: 590px) {
+  .footer-logo__img {
+    margin-bottom: 13px;
+  }
 }
 .footer-logo__text {
   font-family: "Open Sans";

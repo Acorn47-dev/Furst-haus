@@ -32,6 +32,11 @@ background-size: cover;
 
 	}
 	margin-bottom: 47px;
+	@media(max-width: 590px){
+		transform: translateY(-116px);
+		margin-bottom: -12px;
+	}
+
 	position: relative;
 	margin-top: 69px;
 	@media(max-width: 1152px){
@@ -54,7 +59,9 @@ justify-content: space-between;
 				display: flex;
 				margin: 0 auto;
 				margin-bottom: 20px;
+
 			}
+
 		}
 
 		// .footer-top__right
@@ -66,7 +73,14 @@ justify-content: space-between;
 			}
 			display: flex;
 			align-items: center;
+			
 		}
+}
+.footer-contact__title{
+	@media(max-width: 590px){
+		margin: 0 auto;
+	}
+
 }
 .footer-contact {
 	@media(max-width: 768px){
@@ -76,6 +90,9 @@ display: flex;
 align-items: start;
 flex-direction: column;
 transform: translateX(5px);
+@media(max-width: 590px){
+	transform: translate(-3px, 0px);
+}
 		// .footer-contact__title
 
 		&__title {
@@ -96,6 +113,7 @@ margin-bottom: 27px;
 			&:not(:last-child){
 				margin-bottom: 14px;
 			}
+
 			
 		}
 
@@ -116,7 +134,9 @@ font-size: 15px;
 line-height: 20px;
 
 color: #FFFFFF;
-
+&:hover{
+	text-decoration: underline;
+}
 		}
 }
 .footer-links {
@@ -150,6 +170,9 @@ color: #FFFFFF;
 			@media(max-width: 590px){
 				margin-right: 0px;
 			}
+			@media(max-width: 590px){
+				transform: translateY(26px);
+			}
 		}
 
 		// .footer-links__title
@@ -171,6 +194,9 @@ text-decoration: none;
 color: #fff;
 &:not(:last-child){
 	margin-bottom: 16px;
+}
+&:hover{
+	text-decoration: underline;
 }
 
 		}
@@ -196,6 +222,9 @@ color: #FFFFFF;
 			transform: translateX(3px);
 			@media(max-width: 590px){
 				align-items: center;
+			}
+			@media(max-width: 590px){
+				transform: translateY(53px);
 			}
 		}
 
@@ -261,13 +290,16 @@ text-align: center;
 	transform: translate(-50%,-423px);
 }
 @media(max-width: 590px){
-	transform: translate(-50%,-723px);
+	transform: translate(-50%,-820px);
 }
 transform: translate(-50%,-223px);
 		// .footer-logo__img
 
 		&__img {
 			margin-bottom: 22px;
+			@media(max-width: 590px){
+				margin-bottom: 13px;
+			}
 		}
 
 		// .footer-logo__text

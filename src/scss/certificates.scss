@@ -3,6 +3,9 @@
     @media(max-width: 768px){
         margin-bottom: 200px;
     }
+    @media(max-width: 425px){
+        margin-bottom: 252px;
+    }
 }
 
 .container {}
@@ -16,6 +19,12 @@
 
 .certificates-header{
     transform: translateX(-7px);
+    margin-left: 37px;
+    @media(max-width: 425px){
+        transform: translateX(0px);
+        margin-left: 0px;
+    }
+
 }
 .col {
 
@@ -49,9 +58,10 @@
 
 
     &__image {
-        width: 470px;
-        height: 667px;
-
+        max-width: 470px;
+        max-height: 667px;
+        width: 100%;
+        height: 100%;
         &:not(:last-child) {
             margin-right: 30px;
             margin-bottom: 30px;
@@ -64,6 +74,15 @@
             }
             &:last-child {
                 margin-top: 63px;
+            }
+        }
+        @media(max-width: 500px){
+            &:not(:last-child) {
+                margin-right: 0px;
+                margin-bottom: 10px;
+            }
+            &:last-child {
+                margin-top: 0px;
             }
         }
         img {

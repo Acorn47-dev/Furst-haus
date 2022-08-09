@@ -1,8 +1,9 @@
 .feedback {
     position: relative;
-height: 100%;
+    height: 100%;
 
 }
+
 .feedback-backgrounds {
     display: flex;
 
@@ -12,10 +13,9 @@ height: 100%;
 }
 
 
-.container {
-}
+.container {}
 
-.feedback-content__col{
+.feedback-content__col {
     position: relative;
     display: flex;
     justify-content: start;
@@ -25,12 +25,15 @@ height: 100%;
     width: 50%;
     z-index: -1;
 
-    @media(max-width: 1152px){
+    @media(max-width: 1152px) {
         width: 100%;
     }
 }
-.col-contact__content{
 
+.col-contact__content {
+    @media(max-width: 425px) {
+        transform: translateX(14px);
+    }
 
 }
 
@@ -39,28 +42,38 @@ height: 100%;
     height: 100%;
     width: 100%;
     position: absolute;
-    @media(max-width: 1152px){
+
+    @media(max-width: 1152px) {
         flex-direction: column;
         height: 100%;
     }
+
     overflow: hidden;
 }
-.feedback-background {
 
-}
+.feedback-background {}
+
 .one {
     width: 50vw;
     height: 100%;
     background-image: url("../img/feedback-background.jpg");
-    @media(max-width: 1152px){
+    background-position: center;
+    background-size: cover;
+    @media(max-width: 1152px) {
         width: 100vw;
         height: 550px;
     }
+    @media(max-width: 425px) {
+        width: 100vw;
+        height: 683px;
+    }
 }
+
 .two {
     width: 50vw;
     height: 100%;
-    @media(max-width: 1152px){
+
+    @media(max-width: 1152px) {
         width: 100vw;
         height: 678px;
     }
@@ -73,33 +86,37 @@ height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-		// .feedback-content__col
-    @media(max-width: 1152px){
+
+    // .feedback-content__col
+    @media(max-width: 1152px) {
         flex-direction: column;
     }
 
-		&__col {
-            height: 549px;
-            @media(max-width: 1152px){
-                height: 614px;
-            }
-		}
+    &__col {
+        height: 549px;
+
+        @media(max-width: 1152px) {
+            height: 683px;
+        }
+
+
+    }
 }
 
 
 .contact-main {
 
-		// .contact-main__list
-		&__list {
-		}
+    // .contact-main__list
+    &__list {}
 }
+
 .col-contact {
 
     // .col-contact__content
 
-    &__content {
-    }
+    &__content {}
 }
+
 .col {
 
     // .col__feedback-number
@@ -110,81 +127,98 @@ height: 100%;
 
     // .col__feedback-title
 
-    &__feedback-title {
-    }
+    &__feedback-title {}
 }
-.section-number {
-}
-.title {
-}
+
+.section-number {}
+
+.title {}
 
 .contact-list {
     height: 100%;
-		// .contact-list__item
 
-		&__item {
-		}
+    // .contact-list__item
+    @media(max-width: 425px) {
+        margin-top: 40px;
+    }
+
+    &__item {}
 }
+
 .contact-item {
-
+position: relative;
+z-index: 1;
     height: 100%;
-display: flex;
-margin-bottom: 36px;
-		// .contact-item__icon
+    display: flex;
+    margin-bottom: 36px;
 
-		&__icon {
-            margin-right: 21px;
-            width: 24px;
-            height: 24px;
-            img{
-                display: block;
+    @media(max-width: 425px) {
+        margin-bottom: 45px;
+    }
 
-                object-fit: contain;
-            }
-		}
+    // .contact-item__icon
 
-		// .contact-item__text
+    &__icon {
+        margin-right: 21px;
+        width: 24px;
+        height: 24px;
 
-		&__text {
-		}
+        img {
+            display: block;
+
+            object-fit: contain;
+        }
+    }
+
+    // .contact-item__text
+
+    &__text {
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
-.col-contact__content{
+
+.col-contact__content {
     padding: 120px 0px 100px 0px;
+
     height: 100%;
 }
-.col-contact{
+
+.col-contact {
     position: relative;
 
 }
-.col-map{
+
+.col-map {
     position: relative;
 }
+
 .contact-text {
 
-		// .contact-text__title
+    // .contact-text__title
 
-		&__title {
-            font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 17px;
-line-height: 23px;
+    &__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 23px;
 
-color: #FFFFFF;
+        color: #FFFFFF;
 
-		}
+    }
 
-		// .contact-text__descr
+    // .contact-text__descr
 
-		&__descr {
-            font-family: 'Open Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 20px;
-opacity: 0.8;
-color: #FFFFFF;
+    &__descr {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        opacity: 0.8;
+        color: #FFFFFF;
 
-		}
+    }
 }
-

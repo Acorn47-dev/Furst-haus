@@ -230,6 +230,12 @@
     text-align: center;
     color: #FFFFFF;
     margin: 0 auto;
+    transition: all 0.3s;
+    &:hover{
+        color: #D64B58;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 24px rgba(202, 202, 202, 0.35);
+    }
     @media(max-width: 450px){
         width: 290px;
         height: 55px;
