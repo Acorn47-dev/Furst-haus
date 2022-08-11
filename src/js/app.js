@@ -21,3 +21,28 @@ function init() {
 }
 
 ymaps.ready(init);
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  var about = document.querySelector(".about");
+  var button = document.querySelector(".col-main__button");
+  var button = document.querySelector(".col-main__button");
+  var header_burger = document.querySelector(".header-burger");
+  var burger = document.querySelector(".burger");
+  
+  header_burger.addEventListener("click", (e) => {
+   
+    if (header_burger.classList.contains("header-burger--active")) {
+      header_burger.classList.remove("header-burger--active");
+      burger.classList.remove("_active");
+    } else {
+      header_burger.classList.add("header-burger--active");
+      burger.classList.add("_active");
+    }
+
+  })
+  button.addEventListener("click", (e) => {
+    about.scrollIntoView({
+      duration: 2000
+  })
+  })
+})

@@ -90,7 +90,31 @@ opacity: 0.8;
 		}
 }
 .partners-block {
+    position: relative;
+    .partners-block__img{
+        // opacity: 0;
+        position: absolute;
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    }
+    // .partners-block__img-white{
+    //     position: absolute;
+    // }
+    &:hover{
+      
+        .partners-block__img{
+            transition: all 0.5s;
+            filter: none; /* IE6-9 */
+            -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+            filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
 
+        }
+        // .partners-block__img-white{
+        //    opacity: 0;
+        //    transition: all 0.5s;
+        // }
+    }
 		// .partners-block__img
 
 		&__img {

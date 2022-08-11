@@ -19,18 +19,32 @@
             <div class="header-content__col col-with-nav">
                 <nav class="header-nav nav">
                     <ul class="nav-list list">
-                        <div href="#" class="list-item"><a href="#" class="list-link --active">Home</a></div>
-                        <div href="#" class="list-item"><a href="#" class="list-link">Alle Häuser</a></div>
-                        <div href="#" class="list-item"><a href="#" class="list-link">Impressum</a></div>
+                        <div class="list-item"><a href="#" class="list-link --active">Home</a></div>
+                        <div class="list-item"><a href="#" class="list-link">Alle Häuser</a></div>
+                        <div class="list-item"><a href="#" class="list-link">Impressum</a></div>
                     </ul>
                 </nav>
             </div>
             <div class="header-content__col">
                 <button class="header-feedback">Rückruf</button>
             </div>
-            <div class="header-burger">
-                <span></span>
-            </div>
+            <button class="header-burger " data-burger aria-label="открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </div>
+    <div class="burger ">
+        <div class="burger-content">
+            <nav class="burger-content__nav burger-nav">
+                <ul class="burger-nav__list burger-list">
+                    <div class="burger-list__col">
+                        <img class="burger-logo" src="img/logo.svg">
+                        <li class="burger-list__item"><a href="#" class="burger-list__link --active">Home</a></li>
+                        <li class="burger-list__item"><a href="#" class="burger-list__link">Alle Häuser</a></li>
+                        <li class="burger-list__item"><a href="#" class="burger-list__link">Impressum</a></li>
+                    </div>
+                </ul>
+            </nav>
         </div>
     </div>
 </header>

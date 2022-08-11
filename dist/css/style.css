@@ -105,6 +105,8 @@
   display: flex; /* используем flex для центрирования содержимого */
   align-items: center; /* центрируем содержимое кнопки */
   position: absolute;
+  background: none;
+  border: none;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -120,24 +122,111 @@
 }
 
 /* добавляем "гамбургер" */
-.header-burger > span,
-.header-burger > span::before,
-.header-burger > span::after {
-  display: block;
+.burger__line {
   position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
   height: 5px;
-  background-color: #616161;
+  background-color: rgb(0, 0, 0);
+  transition: opacity 0.3s ease-in-out;
 }
 
-.header-burger > span::before {
+.header-burger::before,
+.header-burger::after {
   content: "";
-  top: -8px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(0, 0, 0);
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
 }
 
-.header-burger > span::after {
-  content: "";
-  top: 8px;
+.header-burger::before {
+  top: 0;
+}
+
+.header-burger::after {
+  bottom: 0;
+}
+
+.header-burger--active::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.header-burger--active::after {
+  bottom: auto;
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.header-burger--active .burger__line {
+  opacity: 0;
+}
+
+.burger {
+  background: rgb(242, 242, 242);
+  width: auto;
+  height: 100%;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.burger._active {
+  left: 0%;
+}
+
+.burger-logo {
+  margin-bottom: 5px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.burger-content {
+  padding: 15px 70px 15px 5px;
+}
+.burger-content__nav {
+  width: 100%;
+}
+
+.burger-nav {
+  width: 100%;
+}
+.burger-nav__list {
+  width: 100%;
+}
+
+.burger-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.burger-list__col {
+  width: 100%;
+}
+.burger-list__item {
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.burger-list__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 6px;
+  color: #322123;
+}
+.burger-list .--active {
+  color: #D64B58;
+  font-weight: 800;
 }
 
 .hero {
@@ -658,6 +747,21 @@
   background: #222222;
 }
 
+.partners-block {
+  position: relative;
+}
+.partners-block .partners-block__img {
+  position: absolute;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+.partners-block:hover .partners-block__img {
+  transition: all 0.5s;
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
+}
 .history {
   margin-bottom: 150px;
 }
