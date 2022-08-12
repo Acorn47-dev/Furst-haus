@@ -1,0 +1,69 @@
+.impressum {
+}
+.container {
+}
+.impressum-content {
+}
+.impressum-page {
+    margin-top: 70px;
+    margin-bottom: 55px;
+   
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+color: #696969;
+opacity: 0.8;
+span{
+    font-weight: 800;
+    color: #D64B58;
+}
+}
+.impressum-number {
+}
+.section-number {
+}
+.impressum-title {
+}
+.title {
+}
+.impressum-title-alpha {
+}
+.title-alpha {
+}
+.impressum-text {
+    max-width: 741px;
+    width: 100%;
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+
+/* Текст */
+
+color: #968989;
+margin-bottom: 130px;
+span{
+    font-style: italic; /* Курсивное начертание */
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color:currentColor;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+}
+.impressum-main {
+    transform: translateX(37px);
+}
+.impressum-col-title{
+    margin-bottom: 88px;
+
+}
+p{
+    margin-bottom: 20px;
+}
