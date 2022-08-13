@@ -11,9 +11,27 @@
 @import "feedback";
 @import "footer";
 @import "Impressum_hero";
+@import "houses";
 
 $md1: 768px;
 $maxWidthContainer: 1530px;
+
+.page {
+  margin-top: 70px;
+  margin-bottom: 55px;
+ 
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+color: #696969;
+opacity: 0.8;
+span{
+  font-weight: 800;
+  color: #D64B58;
+}
+}
 
 .container{
     max-width: $maxWidthContainer;

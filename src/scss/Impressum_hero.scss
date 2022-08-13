@@ -4,22 +4,7 @@
 }
 .impressum-content {
 }
-.impressum-page {
-    margin-top: 70px;
-    margin-bottom: 55px;
-   
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 27px;
-color: #696969;
-opacity: 0.8;
-span{
-    font-weight: 800;
-    color: #D64B58;
-}
-}
+
 .impressum-number {
 }
 .section-number {
@@ -33,7 +18,11 @@ span{
 .title-alpha {
 }
 .impressum-text {
+
     max-width: 741px;
+    @media(max-width: 768px){
+        max-width: 510px;
+       }
     width: 100%;
     font-family: 'Open Sans';
 font-style: normal;
@@ -58,6 +47,7 @@ a{
 }
 }
 .impressum-main {
+    margin-right: 29px;
     transform: translateX(37px);
 }
 .impressum-col-title{
