@@ -2132,6 +2132,7 @@ p {
 
 .houses-info {
   background: rgb(247, 247, 247);
+  margin-bottom: 45px;
   height: 88px;
   display: flex;
   align-items: center;
@@ -2156,6 +2157,7 @@ p {
 .houses-info__item-icon {
   min-width: 20px;
   height: 20px;
+  margin-right: 45px;
 }
 @media (max-width: 768px) {
   .houses-info__item-icon {
@@ -2187,6 +2189,33 @@ p {
 @media (max-width: 666px) {
   .houses-info__item-text {
     border: none;
+  }
+}
+
+.houses-descr__content {
+  display: flex;
+  align-items: center;
+}
+.houses-descr__content-col {
+  margin-right: 24px;
+}
+.col__houses-descr-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  /* Текст */
+  color: #968989;
+}
+
+.houses-descr-img {
+  max-width: 710px;
+  max-height: 485px;
+}
+@media (max-width: 1300px) {
+  .houses-descr-img {
+    display: none;
   }
 }
 

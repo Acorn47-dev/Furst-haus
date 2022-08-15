@@ -1,6 +1,7 @@
 .houses-info {
     background: rgb(247,247,247);
     // .houses-info__content
+    margin-bottom: 45px;
     height: 88px;
     display: flex;
     align-items: center;
@@ -31,7 +32,7 @@
     &__item-icon {
         min-width: 20px;
         height: 20px;
-      
+        margin-right: 45px;
         @media(max-width: 768px){
             margin-right: 30px;
         }
