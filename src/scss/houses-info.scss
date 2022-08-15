@@ -1,0 +1,72 @@
+.houses-info {
+    background: rgb(247,247,247);
+    // .houses-info__content
+    height: 88px;
+    display: flex;
+    align-items: center;
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    // .houses-info__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @media(max-width: 666px){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+    }
+
+    // .houses-info__item
+
+    &__item {
+        display: flex;
+    }
+
+    // .houses-info__item-icon
+
+    &__item-icon {
+        min-width: 20px;
+        height: 20px;
+      
+        @media(max-width: 768px){
+            margin-right: 30px;
+        }
+        img{
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .houses-info__item-text
+
+    &__item-text {
+        font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+border-right: 1px solid #E2E2E2;
+@media(max-width: 666px){
+    border: none;
+}
+/* Основной цвет */
+
+color: #322123;
+
+padding-right: 22px;
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+opacity: 0.8;
+flex-grow: 0;
+    }
+}
+.container {
+}

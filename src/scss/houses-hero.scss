@@ -1,0 +1,113 @@
+.houses-hero {
+    height: 775px;
+    width: 100%;
+    background-image: url(../img/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+
+
+
+    @media(max-width: 425px){
+        height: 448px;
+        margin-bottom: 148px;
+    }
+}
+.container {
+}
+.houses-hero-content {
+
+		// .houses-hero-content__col
+
+		&__col {
+		}
+}
+
+.col-up {
+    margin-bottom: 260px;
+		// .col-up__page
+
+		&__page {
+          
+		}
+}
+
+.col-down {
+
+		// .col-down__preface
+
+		&__preface {
+            font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 50px;
+line-height: 68px;
+letter-spacing: 0.075em;
+margin-bottom: -13px;
+color: #FFFFFF;
+		}
+
+		// .col-down__text
+
+		&__text {
+            font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 90px;
+line-height: 123px;
+
+color: #FFFFFF;
+margin-bottom: 40px;
+
+		}
+
+		// .col-down__price
+
+		&__price {
+            font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+margin-bottom: 34px;
+letter-spacing: 0.075em;
+
+color: #FFFFFF; 
+span{
+    color: #D64B58;
+    font-weight: 700;
+}
+		}
+
+		// .col-down__button
+
+		&__button {
+            width: 250px;
+height: 56.45px;
+left: 225px;
+top: 715.81px;
+
+/* Второй цвет */
+border: none;
+background: #D64B58;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 23px;
+/* identical to box height */
+
+text-align: center;
+filter: drop-shadow(0px 0px 24px rgba(214, 75, 88, 0.7));
+color: #FFFFFF;
+
+&:hover{
+   
+    transition: all 0.3s ease-in-out;
+    color: #D64B58;
+    background:  #FFFFFF;
+    filter: drop-shadow(0px 0px 24px #fff);
+}
+		}
+}
