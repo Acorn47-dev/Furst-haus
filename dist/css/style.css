@@ -2233,6 +2233,7 @@ p {
 
 .houses-especially {
   width: 100%;
+  margin-bottom: 150px;
 }
 .houses-especially__header {
   margin-bottom: 79px;
@@ -2408,6 +2409,125 @@ p {
   text-align: right;
   /* Второй цвет */
   color: #D64B58;
+}
+
+.houses-video {
+  margin-bottom: 150px;
+}
+.houses-video__header {
+  margin-bottom: 55px;
+}
+.houses-video__content {
+  display: flex;
+  flex-direction: column;
+}
+.houses-video__content-col:not(:last-child) {
+  margin-bottom: 150px;
+}
+.houses-video__video {
+  max-width: 1470px;
+  max-height: 533px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/video-background-beta.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.houses-video__video-pause {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: red;
+  z-index: 1;
+  background-image: url(../img/video-pause.svg);
+}
+.houses-video__block {
+  max-width: 1470px;
+  max-height: 473px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.houses-video__block-content {
+  padding: 141px 65px 670px 65px;
+}
+@media (max-width: 1010px) {
+  .houses-video__block-content {
+    padding: 141px 0px 670px 0px;
+  }
+}
+.houses-video__block-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 82px;
+  letter-spacing: 0.075em;
+  opacity: 0.9;
+  color: #FFFFFF;
+  max-width: 887px;
+  width: 100%;
+  margin-bottom: 55px;
+}
+.houses-video__block-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.houses-video__block-text {
+  max-width: 521px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  opacity: 0.8;
+  color: #FFFFFF;
+  margin-right: 50px;
+}
+@media (max-width: 1010px) {
+  .houses-video__block-text {
+    max-width: 359px;
+  }
+}
+.houses-video .houses-video__block-background {
+  background-image: url(../img/video-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+@media (max-width: 1010px) {
+  .houses-video .houses-video__block-background {
+    width: calc(100vw + 1px);
+    transform: translateX(-30px);
+  }
+}
+.houses-video__block-button {
+  width: 250px;
+  height: 54.92px;
+  background: #D64B58;
+  border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in;
+  filter: drop-shadow(0px 0px 24px rgba(214, 75, 88, 0.7));
+}
+.houses-video__block-button:hover {
+  background: #fff;
+  color: #D64B58;
+  filter: drop-shadow(0px 0px 24px #fff);
 }
 
 .page {
