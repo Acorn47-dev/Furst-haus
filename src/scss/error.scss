@@ -16,11 +16,12 @@
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
- 
+
 }
 
 .title.error-title {
-    color:#D64B58;;
+    color: #D64B58;
+    ;
 }
 
 .error-title-alpha {
@@ -45,10 +46,10 @@
 
 .error-btn {
 
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     max-width: 250px;
     height: 54.92px;
     width: 100%;
@@ -60,5 +61,5 @@ margin: 0 auto;
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
-    
+    filter: drop-shadow(0px 0px 24px rgba(214, 75, 88, 0.35));
 }
