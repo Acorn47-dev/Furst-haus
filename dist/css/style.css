@@ -2890,6 +2890,10 @@ body {
   margin-bottom: 30px;
 }
 
+.title.error-title {
+  color: #D64B58;
+}
+
 .error-title-alpha {
   width: 100%;
   text-align: center;
