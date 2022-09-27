@@ -2222,46 +2222,31 @@ p {
   }
 }
 
-.houses-photo {
-  margin-bottom: 150px;
-}
-.photo-block {
-  flex-direction: column;
-  justify-content: center;
-}
-.photo-block__col {
-  margin: 0 auto;
-  display: flex;
-  width: 970px;
+html,
+body {
   position: relative;
-}
-.photo-block__col-col {
-  margin-top: 11px;
-  position: relative;
+  height: 100%;
 }
 
-.photo-block-img {
-  display: flex;
-  width: 970px;
-  height: 485px;
-  position: relative;
-  overflow: hidden;
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 
-.img-1 {
-  background-image: url(../img/Rosenrot-2.jpg);
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-.photo-block__descr {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.pimage {
-  width: 970px;
-  height: 485px;
-  min-width: 970px;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -2276,83 +2261,11 @@ p {
   align-items: center;
 }
 
-.img-2 {
-  background: red;
-}
-
-.img-3 {
-  background: blue;
-}
-
-.photo-block-leftarrow {
-  width: 50px;
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  transform: translate(-100%, -50%);
-  left: 0;
-  height: 50px;
-  background-image: url(../img/houses-arrow-left.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.photo-block-rightarrow {
-  width: 50px;
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  transform: translate(100%, -50%);
-  right: 0;
-  height: 50px;
-  background-image: url(../img/houses-arrow-right.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.photo-block-name {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  /* Текст */
-  color: #968989;
-}
-
-.photo-block-text {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
-  /* Второй цвет */
-  color: #D64B58;
-}
-
-.photo-block-number {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  display: flex;
-  align-items: center;
-  text-align: right;
-  /* Второй цвет */
-  color: #D64B58;
-}
-.photo-block-number span {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  display: flex;
-  align-items: center;
-  text-align: right;
-  /* Обводка сзади */
-  color: #F0E1E1;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .houses-especially {
@@ -2549,15 +2462,21 @@ p {
   margin-bottom: 150px;
 }
 .houses-video__video {
+  position: relative;
   max-width: 1470px;
   max-height: 533px;
   width: 100%;
   height: 100%;
   background-image: url(../img/video-background-beta.jpg);
-  position: relative;
+  z-index: -1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.houses-video__video video {
+  position: absolute;
+  z-index: -1;
+  background: red;
 }
 .houses-video__video-pause {
   width: 64px;
@@ -2566,7 +2485,9 @@ p {
   top: 50%;
   left: 50%;
   background: red;
-  z-index: 1;
+  z-index: 71;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: url(../img/video-pause.svg);
 }
 .houses-video__block {
@@ -2950,6 +2871,58 @@ p {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.error {
+  background-image: url(../img/error-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.error-content {
+  padding: 189px 0px 159px 0px;
+}
+
+.error-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.error-title-alpha {
+  width: 100%;
+  text-align: center;
+}
+
+.error-descr {
+  max-width: 506px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #968989;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.error-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 250px;
+  height: 54.92px;
+  width: 100%;
+  background: #D64B58;
+  border: none;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .page {

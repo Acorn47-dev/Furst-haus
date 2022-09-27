@@ -1,0 +1,63 @@
+.error {
+    background-image: url(../img/error-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {}
+
+.error-content {
+    padding: 189px 0px 159px 0px;
+
+}
+
+.error-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    
+}
+
+.error-title-alpha {
+    width: 100%;
+    text-align: center;
+}
+
+.title-alpha {}
+
+.error-descr {
+
+    max-width: 506px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #968989;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.error-btn {
+
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+    max-width: 250px;
+    height: 54.92px;
+    width: 100%;
+    background: #D64B58;
+    border: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    
+}

@@ -1,154 +1,46 @@
-.houses-photo {
-margin-bottom: 150px;
-    // .houses-photo__content
-
-    &__content {
-    }
-
-    // .houses-photo__content-block
-
-    &__content-block {
-    }
-}
-.container {
-}
-.photo-block {
-
-
-flex-direction: column;
-justify-content: center;
-
-
-    // .photo-block__col
-
-    &__col {
-margin: 0 auto;
-        display: flex;
-        width: 970px;
-        position: relative;
-    }
-
-    // .photo-block__col-col
-
-    &__col-col {
-        margin-top: 11px;
-        position: relative;
-    }
-}
-.photo-block-img {
-    display: flex;
-    width: 970px;
-    height: 485px;
-    position: relative;
-    overflow: hidden;
-}
-.img-1 {
-    background-image: url(../img/Rosenrot-2.jpg)
+html,
+body {
+  position: relative;
+  height: 100%;
 }
 
-.photo-block__descr{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 
-.pimage {
-    width: 970px;
-    height: 485px;
-    min-width: 970px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
-.img-2 {
-    background: red;
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
-.img-3 {
-    background: blue;
-}
-.photo-block-leftarrow {
-    width: 50px;
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    transform: translate(-100%,-50%);
-    left: 0;
-    height: 50px;
-    background-image: url(../img/houses-arrow-left.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 
-}
-.photo-block-rightarrow {
-    width: 50px;
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    transform: translate(100%,-50%);
-    right: 0;
-    height: 50px;
-    background-image: url(../img/houses-arrow-right.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.photo-block-name {
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 20px;
-
-/* Текст */
-
-color: #968989;
-}
-.photo-block-text {
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 27px;
-
-/* Второй цвет */
-
-color: #D64B58;
-
-}
-.photo-block-number {
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 27px;
-display: flex;
-align-items: center;
-text-align: right;
-
-/* Второй цвет */
-
-color: #D64B58;
-span{
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 27px;
-display: flex;
-align-items: center;
-text-align: right;
-
-/* Обводка сзади */
-
-color: #F0E1E1;
-
-}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
