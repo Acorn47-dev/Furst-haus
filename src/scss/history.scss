@@ -219,6 +219,9 @@
 .history-button {
     width: 302px;
     height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #D64B58;
     border: none;
     box-shadow: 0px 0px 24px rgba(214, 75, 88, 0.35);
