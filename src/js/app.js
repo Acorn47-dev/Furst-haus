@@ -51,9 +51,25 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 })
-var swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// var swiper = new Swiper(".mySwiper", {
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+
+var video_inside = document.querySelector(".video-inside");
+var video = document.querySelector(".houses-video__video");
+var video_btn = document.querySelector(".houses-video__video-pause");
+
+video_inside.addEventListener("click", (e) => {
+  if (video.paused) {
+    video_btn.style.display = "none";
+    video.play();
+  } else {
+
+    video_btn.style.display = "block";
+    video.pause();
+  }
+ 
+})

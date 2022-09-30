@@ -2463,22 +2463,24 @@ body {
 .houses-video__content-col:not(:last-child) {
   margin-bottom: 150px;
 }
-.houses-video__video {
+.houses-video .video-inside {
   position: relative;
-  max-width: 1470px;
-  max-height: 533px;
+  height: 553px;
   width: 100%;
-  height: 100%;
+}
+.houses-video__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1470px;
+  height: 533px;
+  width: 100%;
   background-image: url(../img/video-background-beta.jpg);
   z-index: -1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.houses-video__video video {
-  position: absolute;
-  z-index: -1;
-  background: red;
 }
 .houses-video__video-pause {
   width: 64px;
@@ -2486,8 +2488,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: red;
+  transform: translate(-50%, -50%);
   z-index: 71;
+  cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/video-pause.svg);
