@@ -2009,6 +2009,8 @@ p {
   font-size: 17px;
   line-height: 23px;
   text-align: center;
+  display: inline-block;
+  vertical-align: middle;
   color: #FFFFFF;
   margin: 0 auto;
   transition: all 0.3s;
