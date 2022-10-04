@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Alle Häuser - house</title>
     <link rel="icon" href="img/icon.svg">
+    <link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
 </head>
+
 <body>
     <div class="wrapper">
 
@@ -126,43 +131,42 @@
     </div>
 </div>
 
-        <meta
-name="viewport"
-content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-/>
-<!-- Link Swiper's CSS -->
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-/>
-<div class="houses-photo">
-    <!-- <div class="houses-photo-left"></div>
-    <div class="houses-photo-right"></div> -->
-    <div class="container">
-        <div class="houses-photo__content">
-            <div class="houses-photo__content-block photo-block">
-                <div class="photo-block__col">
-                    <div class="photo-block-img ">
-                        <div class="img-1 pimage"></div>
-                        <div class="img-2 pimage"></div>
-                        <div class="img-3 pimage"></div>
-                    </div>
-                    <div class="photo-block-leftarrow"></div>
-                    <div class="photo-block-rightarrow"></div>
-                </div>
-                <div class="photo-block__col photo-block__descr">
-                    <div class="photo-block__col-col">
-                        <div class="photo-block-name">Rosenrot</div>
-                        <div class="photo-block-text">Vorderansicht</div>
-                    </div>
-                    <div class="photo-block__col-col">
-                        <div class="photo-block-number">02 <span>| 04</span></div>
-                    </div>
-                </div>
+        <!-- Slider main container -->
+<div class="swiper">
+    <div class="swiper-container swiper-col">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="img/house1.jpg" alt="">
             </div>
+            <div class="swiper-slide">
+                <img src="img/house1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/house1.jpg" alt="">
+            </div>
+        </div>
+          <!-- If we need navigation buttons -->
+          <div class="cut">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+    
+    </div>
+    <div class="swiper-col">
+        <div class="swiper-col-col">
+            <div class="swiper-name">Rosenrot</div>
+            <div class="swiper-subname">Vorderansicht</div>
+        </div>
+        <div class="swiper-col-col">
+            <div class="swiper-page">02 <span>| 04</span></div>
+
         </div>
     </div>
 </div>
+
         <div class="houses-especially">
     <div class="container">
         <div class="houses-especially__header">
@@ -494,7 +498,12 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
         </div>
     </div>
 </footer>
+        
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+  integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+  crossorigin="anonymous"></script>
         <script src="js/app.min.js"></script>
     </div>
 

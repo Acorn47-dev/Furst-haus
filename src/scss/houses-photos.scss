@@ -1,46 +1,96 @@
-html,
-body {
-  position: relative;
-  height: 100%;
-}
 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+.swiper-container {
+    position:relative;
+    width: 90vw;
+    height: 300px;
 }
-
-.swiper {
-  width: 100%;
-  height: 100%;
+.swiper-container > .swiper-slide__content {
+  position:absolute;
+  top:0;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+  height: 300px;
+  display:flex;
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
-}
+  justify-content:center;
+  transition:all 200ms linear;
+  transform: scale(0.8);
+  
+  &.swiper-slide-active{
+    transform: scale(1);
 
-.swiper-slide img {
-  display: block;
+  }
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.swiper-slide__content {
+  height: 300px;
+}
+.swiper-col {
+  display: flex;
+  align-items: center;
+
+}
+.swiper-col-col {
+  display: flex;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+ margin: 0 auto;
+
+  
+  flex-direction: column;
+}
+.swiper-name {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 20px;
+
+/* Текст */
+
+color: #968989;
+}
+.swiper-subname {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+
+/* Второй цвет */
+
+color: #D64B58;
+}
+.swiper-page {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: right;
+
+/* Второй цвет */
+
+color: #D64B58;
+span{
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+text-align: right;
+
+/* Обводка сзади */
+
+color: #F0E1E1;
+
+}
 }

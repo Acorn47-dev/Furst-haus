@@ -1,25 +1,25 @@
 import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
-let center = [53.338764, 9.875054];
+// let center = [53.338764, 9.875054];
 
-function init() {
-  let map = new ymaps.Map('map-test', {
-    center: center,
-    zoom: 17
-  });
+// function init() {
+//   let map = new ymaps.Map('map-test', {
+//     center: center,
+//     zoom: 17
+//   });
 
-  map.controls.remove('geolocationControl'); // удаляем геолокацию
-  map.controls.remove('searchControl'); // удаляем поиск
-  map.controls.remove('trafficControl'); // удаляем контроль трафика
-  map.controls.remove('typeSelector'); // удаляем тип
-  map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-  map.controls.remove('zoomControl'); // удаляем контрол зуммирования
-  map.controls.remove('rulerControl'); // удаляем контрол правил
-  map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
-}
+//   map.controls.remove('geolocationControl'); // удаляем геолокацию
+//   map.controls.remove('searchControl'); // удаляем поиск
+//   map.controls.remove('trafficControl'); // удаляем контроль трафика
+//   map.controls.remove('typeSelector'); // удаляем тип
+//   map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+//   map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+//   map.controls.remove('rulerControl'); // удаляем контрол правил
+//   map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+// }
 
-ymaps.ready(init);
+// ymaps.ready(init);
 
 
 document.addEventListener("DOMContentLoaded", (e) => {
@@ -73,3 +73,26 @@ video_inside.addEventListener("click", (e) => {и
   }
  
 })
+
+$(document).ready(function() {
+  // Assign some jquery elements we'll need
+  var $swiper = $(".swiper-container");
+  var $bottomSlide = null; // Slide whose content gets 'extracted' and placed
+  // into a fixed position for animation purposes
+  var $bottomSlideContent = null; // Slide content that gets passed between the
+  // panning slide stack and the position 'behind'
+  // the stack, needed for correct animation style
+
+  var mySwiper = new Swiper(".swiper-container", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    centeredSlides: true,
+    roundLengths: true,
+    loop: false,
+    loopAdditionalSlides: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+});
