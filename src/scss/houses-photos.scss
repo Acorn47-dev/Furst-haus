@@ -1,26 +1,39 @@
 
+.swiper{}
+
 .swiper-container {
     position:relative;
-    width: 90vw;
-    height: 300px;
+
+    max-height: 970px;
 }
 .swiper-container > .swiper-slide__content {
   position:absolute;
   top:0;
 }
-
+.swiper-wrapper{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+}
 .swiper-slide {
-  height: 300px;
+  min-height: 434px;
+  min-width: 857px;
   display:flex;
-
+  background: #eee;
   align-items: center;
   justify-content:center;
   transition:all 200ms linear;
-  transform: scale(0.8);
+  filter: gray; /* для IE6-9 */  
+  filter: grayscale(1); /* W3C */  
   
   &.swiper-slide-active{
-    transform: scale(1);
-
+    min-height: 485px;
+    min-width: 970px;
+    margin: 0 50px;
+    background: #fc0;
+    filter: none; /* для IE6-9 */  
+    filter: grayscale(0); /* W3C */  
+  
   }
   img{
     display: block;
@@ -32,20 +45,26 @@
 .swiper-slide__content {
   height: 300px;
 }
+
 .swiper-col {
-  display: flex;
-  align-items: center;
-
 }
-.swiper-col-col {
-  display: flex;
+.container {
+}
+.swiper-content {
+  max-width: 970px;
   width: 100%;
- margin: 0 auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+		// .swiper-content__col
 
-  
-  flex-direction: column;
+		&__col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+		}
 }
-.swiper-name {
+.swiper-title {
   font-family: 'Open Sans';
 font-style: normal;
 font-weight: 300;
@@ -56,7 +75,7 @@ line-height: 20px;
 
 color: #968989;
 }
-.swiper-subname {
+.swiper-subtitle {
   font-family: 'Open Sans';
 font-style: normal;
 font-weight: 700;
@@ -66,6 +85,7 @@ line-height: 27px;
 /* Второй цвет */
 
 color: #D64B58;
+
 }
 .swiper-page {
   font-family: 'Open Sans';
@@ -76,21 +96,8 @@ line-height: 27px;
 display: flex;
 align-items: center;
 text-align: right;
-
-/* Второй цвет */
-
 color: #D64B58;
 span{
-  font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 27px;
-text-align: right;
-
-/* Обводка сзади */
-
 color: #F0E1E1;
-
 }
 }

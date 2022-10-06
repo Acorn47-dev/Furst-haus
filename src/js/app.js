@@ -84,8 +84,9 @@ $(document).ready(function() {
   // the stack, needed for correct animation style
 
   var mySwiper = new Swiper(".swiper-container", {
-    spaceBetween: 10,
+    spaceBetween: 0,
     slidesPerView: 3,
+    
     centeredSlides: true,
     roundLengths: true,
     loop: false,
