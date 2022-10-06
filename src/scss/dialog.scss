@@ -1,0 +1,130 @@
+.dialog-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    display: none;
+    &.--active{
+        display: block;
+    }
+}
+
+.dialog {
+    position: relative;
+    display: none;
+    &.--active{
+        display: block;
+    }
+}
+.dialog-close {
+    position: absolute;
+    z-index: 11;
+    transform: translate(-20px,25px);
+    top: 0;
+    right: 0;
+    font-size: 30px;
+}
+
+
+.container {}
+
+.dialog-content {
+    padding: 40px 33px 70px 33px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 110px rgba(0, 0, 0, 0.25);
+    width: 470px;
+    height: 502px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dialog-title {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 10px;
+
+    /* Выделеный текст */
+
+    color: #696969;
+
+}
+
+.dialog-subtitle {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+
+    /* Выделеный текст */
+
+    color: #696969;
+
+}
+
+.dialog-form {
+    max-width: 305px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    // .dialog-form__input-name
+    .dialog-input {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #9A9A9A;
+        padding-bottom: 4.23px;
+        opacity: 0.8;
+        border: none;
+        border-bottom: 1px solid grey;
+        outline: none;
+        margin-bottom: 43px;
+    }
+
+    &__input-name {}
+
+    // .dialog-form__input-email
+
+    &__input-email {}
+
+    // .dialog-form__input-news
+
+    &__input-news {}
+
+    // .dialog-form__input-send
+
+    &__input-send {
+        border: none;
+        outline: none;
+        background: none;
+        border: 1px solid #696969;
+        font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 23px;
+text-align: center;
+
+/* Выделеный текст */
+
+color: #696969;
+padding: 17px 105px;
+    }
+}

@@ -23,6 +23,19 @@ flsFunctions.isWebp();
 
 
 document.addEventListener("DOMContentLoaded", (e) => {
+  var header_feedback = document.querySelector(".header-feedback");
+  var dialog = document.querySelector(".dialog");
+  var dialog_bckgr = document.querySelector(".dialog-background");
+  var dialog_close = document.querySelector(".dialog-close");
+header_feedback.addEventListener("click", (e) => {
+
+  dialog.classList.add("--active")
+  dialog_bckgr.classList.add("--active")
+})
+  dialog_close.addEventListener("click", (e) => {
+    dialog.classList.remove("--active")
+  dialog_bckgr.classList.remove("--active")
+})
   var about = document.querySelector(".about");
   var button = document.querySelector(".col-main__button");
   var button = document.querySelector(".col-main__button");
@@ -58,21 +71,21 @@ document.addEventListener("DOMContentLoaded", (e) => {
 //   },
 // });
 
-var video_inside = document.querySelector(".video-inside");
-var video = document.querySelector(".houses-video__video");
-var video_btn = document.querySelector(".houses-video__video-pause");
+// var video_inside = document.querySelector(".video-inside");
+// var video = document.querySelector(".houses-video__video");
+// var video_btn = document.querySelector(".houses-video__video-pause");
 
-video_inside.addEventListener("click", (e) => {и
-  if (video.paused) {
-    video_btn.style.display = "none";
-    video.play();
-  } else {
+// video_inside.addEventListener("click", (e) => {и
+//   if (video.paused) {
+//     video_btn.style.display = "none";
+//     video.play();
+//   } else {
 
-    video_btn.style.display = "block";
-    video.pause();
-  }
+//     video_btn.style.display = "block";
+//     video.pause();
+//   }
  
-})
+// })
 
 $(document).ready(function() {
   // Assign some jquery elements we'll need
