@@ -1453,12 +1453,20 @@
 
 .col-contact {
   position: relative;
+  z-index: 2;
 }
 
 .col-map {
   position: relative;
 }
 
+.contact-text {
+  position: relative;
+  z-index: 2;
+}
+.contact-text:hover {
+  text-decoration: underline;
+}
 .contact-text__title {
   font-family: "Open Sans";
   font-style: normal;
@@ -3094,6 +3102,12 @@ p {
   /* Выделеный текст */
   color: #696969;
   padding: 17px 105px;
+  transition: all 0.3s;
+}
+.dialog-form__input-send:hover {
+  background: #696969;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 body.--block {

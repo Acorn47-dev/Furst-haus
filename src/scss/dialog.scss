@@ -6,22 +6,26 @@
     backdrop-filter: blur(3.5px);
     /* Note: backdrop-filter has minimal browser support */
     display: none;
-    &.--active{
+
+    &.--active {
         display: block;
+
     }
 }
 
 .dialog {
     position: relative;
     display: none;
-    &.--active{
+
+    &.--active {
         display: block;
     }
 }
+
 .dialog-close {
     position: absolute;
     z-index: 11;
-    transform: translate(-20px,25px);
+    transform: translate(-20px, 25px);
     top: 0;
     right: 0;
     font-size: 30px;
@@ -116,15 +120,21 @@
         background: none;
         border: 1px solid #696969;
         font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 17px;
-line-height: 23px;
-text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
 
-/* Выделеный текст */
+        /* Выделеный текст */
 
-color: #696969;
-padding: 17px 105px;
+        color: #696969;
+        padding: 17px 105px;
+        transition: all 0.3s;
+        &:hover{
+            background: #696969;
+            color: #fff;
+            border: 1px solid #fff;
+        }
     }
 }
