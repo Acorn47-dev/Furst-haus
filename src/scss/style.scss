@@ -25,6 +25,9 @@
 $md1: 768px;
 $maxWidthContainer: 1530px;
 
+body.--block{
+  overflow-y: hidden;
+}
 .page {
   margin-top: 70px;
   margin-bottom: 55px;

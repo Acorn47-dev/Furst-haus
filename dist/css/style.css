@@ -3096,6 +3096,10 @@ p {
   padding: 17px 105px;
 }
 
+body.--block {
+  overflow-y: hidden;
+}
+
 .page {
   margin-top: 70px;
   margin-bottom: 55px;

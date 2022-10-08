@@ -25,15 +25,18 @@ flsFunctions.isWebp();
 document.addEventListener("DOMContentLoaded", (e) => {
   var header_feedback = document.querySelector(".header-feedback");
   var dialog = document.querySelector(".dialog");
+  var body = document.body;
+ 
   var dialog_bckgr = document.querySelector(".dialog-background");
   var dialog_close = document.querySelector(".dialog-close");
 header_feedback.addEventListener("click", (e) => {
-
+  body.classList.add("--block")
   dialog.classList.add("--active")
   dialog_bckgr.classList.add("--active")
 })
   dialog_close.addEventListener("click", (e) => {
     dialog.classList.remove("--active")
+    body.classList.remove("--block")
   dialog_bckgr.classList.remove("--active")
 })
   var about = document.querySelector(".about");
