@@ -1093,6 +1093,12 @@
   gap: 30px;
   position: relative;
 }
+.facades-col::-webkit-scrollbar {
+  width: 5px;
+}
+.facades-col::-webkit-scrollbar-track-piece {
+  background: #626262;
+}
 @media (max-width: 767px) {
   .facades-col {
     display: flex;
@@ -1156,6 +1162,12 @@
     margin-bottom: 118px;
   }
 }
+.description ::-webkit-scrollbar-track-piece:end {
+  margin-right: 40vw;
+}
+.description ::-webkit-scrollbar-track-piece:start {
+  margin-left: 40vw;
+}
 
 .description-header {
   transform: translate(30px, 2px);
@@ -1174,6 +1186,12 @@
   overflow: hidden;
   height: 100%;
   overflow-x: auto;
+}
+.description-list::-webkit-scrollbar {
+  height: 6px;
+}
+.description-list::-webkit-scrollbar-track-piece {
+  background: #F0E1E1; /* цвет дорожки */
 }
 @media (max-width: 425px) {
   .description-list {
@@ -1229,6 +1247,12 @@
   padding-right: 30px;
   width: 390px;
   color: #968989;
+}
+.description-item__descr::-webkit-scrollbar {
+  width: 5px;
+}
+.description-item__descr::-webkit-scrollbar-track-piece {
+  background: #F0E1E1; /* цвет дорожки */
 }
 
 .description-item-content {
@@ -3146,6 +3170,11 @@ body.--block {
   height: 10px; /* ширина scrollbar */
 }
 
+*::-webkit-scrollbar-track-piece {
+  background: #626262;
+  border-radius: 100px;
+}
+
 *::-webkit-scrollbar-track {
   background: #FFFFFF;
   opacity: 0.23;
@@ -3155,7 +3184,7 @@ body.--block {
 *::-webkit-scrollbar-thumb {
   background-color: #D64B58; /* цвет плашки */
   border-radius: 20px; /* закругления плашки */
-  border: 1.5px solid #FFFFFF; /* padding вокруг плашки */
+  border: 1.5px solid transparent; /* padding вокруг плашки */
 }
 
 .wrapper {

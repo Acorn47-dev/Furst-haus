@@ -85,13 +85,20 @@ opacity: 0.8;
 
 position: relative;
 
+&::-webkit-scrollbar{
+    width: 5px;   
+}
+&::-webkit-scrollbar-track-piece{
+    background: #626262;
 
+}
 		// .facades-col__block
         @media(max-width: 767px){
             display: flex;
             width: 100%;
             overflow: hidden;
             overflow-x: auto;
+
             padding-bottom: 52px;
             gap: 0px;
         }

@@ -59,6 +59,10 @@ span{
   width: 10px;  
   height: 10px;                /* ширина scrollbar */
 }
+*::-webkit-scrollbar-track-piece{
+    background: #626262;
+    border-radius: 100px;
+}
 *::-webkit-scrollbar-track {
   background: #FFFFFF;
   opacity: 0.23;
@@ -67,7 +71,7 @@ span{
 *::-webkit-scrollbar-thumb {
   background-color: #D64B58;    /* цвет плашки */
   border-radius: 20px;       /* закругления плашки */
-  border: 1.5px solid #FFFFFF;  /* padding вокруг плашки */
+  border: 1.5px solid transparent;  /* padding вокруг плашки */
 }
 
 .wrapper {
