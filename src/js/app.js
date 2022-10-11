@@ -26,9 +26,27 @@ document.addEventListener("DOMContentLoaded", (e) => {
   var header_feedback = document.querySelector(".header-feedback");
   var dialog = document.querySelector(".dialog");
   var body = document.body;
- 
+  var page = [1, 2, 3];
   var dialog_bckgr = document.querySelector(".dialog-background");
   var dialog_close = document.querySelector(".dialog-close");
+  var page_index = 0;
+  var swiper_button_next = document.querySelector(".swiper-button-next");
+  var swiper_button_prev = document.querySelector(".swiper-button-prev");
+  var dialog_close = document.querySelector(".dialog-close");
+  var swiper_page = document.querySelector(".swiper-page");
+  
+  swiper_button_next.addEventListener("click", (e) => {
+    page_index++;
+    changetext();
+  })
+  swiper_button_prev.addEventListener("click", (e) => {
+    page_index--;
+    changetext();
+  })
+
+  function changetext() {
+    swiper_page.innerHTML = page[page_index];
+  }
 header_feedback.addEventListener("click", (e) => {
   body.classList.add("--block")
   dialog.classList.add("--active")
@@ -102,14 +120,19 @@ $(document).ready(function() {
   var mySwiper = new Swiper(".swiper-container", {
     spaceBetween: 0,
     slidesPerView: 3,
-    
-    centeredSlides: true,
     roundLengths: true,
+
+
+    loopAdditionalSlides: 0,
+    centeredSlides: true,
+  paginationClickable: true,
+  centeredSlides: true,
+  spaceBetween : 0,
     loop: false,
-    loopAdditionalSlides: 30,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
     }
   });
+  mySwiper.lockSwipeToNext();
 });
