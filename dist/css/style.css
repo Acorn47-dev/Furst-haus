@@ -2267,6 +2267,7 @@ p {
 
 .swiper-container {
   position: relative;
+  width: 100%;
   max-height: 970px;
 }
 
@@ -2275,44 +2276,22 @@ p {
   top: 0;
 }
 
-.swiper-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 11px;
-}
-
 .swiper-slide {
-  max-height: 434px;
-  max-width: 857px;
+  width: 100%;
   height: 100%;
   text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
   transition: all 200ms linear;
   filter: gray;
   /* для IE6-9 */
   filter: grayscale(1);
   /* W3C */
+  display: block;
 }
 .swiper-slide.swiper-slide-active {
-  min-height: 485px;
-  min-width: 970px;
-  margin: 0 77px;
+  transform: scale(10);
   background: #fc0;
+  -webkit-transform: scale(2);
+  transform: scale(1.15) !important;
   filter: none;
   /* для IE6-9 */
   filter: grayscale(0);
@@ -2332,7 +2311,6 @@ p {
 
 .swiper-content {
   max-width: 970px;
-  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -2379,8 +2357,9 @@ p {
   color: #F0E1E1;
 }
 
-.swiper_wrap {
+.swiper_wrapper {
   position: relative;
+  width: 100%;
 }
 
 .swiper-button-next,
@@ -2405,6 +2384,24 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.swiper-slide-active {
+  background-color: lightcoral;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .houses-especially {

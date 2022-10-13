@@ -117,22 +117,16 @@ $(document).ready(function() {
   // panning slide stack and the position 'behind'
   // the stack, needed for correct animation style
 
-  var mySwiper = new Swiper(".swiper-container", {
-    spaceBetween: 0,
-    slidesPerView: 3,
-    roundLengths: true,
+  var mySwiper = new Swiper ('.swiper-container', {
+    slidesPerView: 1.7,
+    spaceBetween: 140,
 
-
-    loopAdditionalSlides: 0,
+    watchOverflow: true,
     centeredSlides: true,
-  paginationClickable: true,
-  centeredSlides: true,
-  spaceBetween : 0,
-    loop: false,
+
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     }
-  });
-  mySwiper.lockSwipeToNext();
+  })
 });

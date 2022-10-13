@@ -341,6 +341,7 @@
     transform: scale(1)
 }
 
+
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
     transform: scale(.66)
 }
@@ -744,3 +745,6 @@ button.swiper-pagination-bullet {
     backface-visibility: hidden;
     overflow: hidden
 }
+// .swiper-slide-active {
+// margin: 0 20px;
+// }
