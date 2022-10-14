@@ -1,6 +1,7 @@
 .swiper {
   width: 100%;
   height: 100%;
+
 }
 
 .swiper-container {
@@ -19,10 +20,12 @@
 .swiper-slide {
 
 }
-.swiper-slide {
+.swiper-slide  {
   // min-height: 434px;
+
 width: 100%;
 height: 100%;
+
   text-align: center;
   transition: all 200ms linear;
   filter: gray;
@@ -35,10 +38,10 @@ height: 100%;
     // min-height: 485px;
     // min-width: 970px;
 
-transform: scale(10);
-    background: #fc0;
+
+
     -webkit-transform: scale(2);
-    transform: scale(1.15) !important;
+    transform: scale(1.2) !important;
     filter: none;
     /* для IE6-9 */
     filter: grayscale(0);
@@ -119,6 +122,7 @@ transform: scale(10);
   }
 }
 
+
 .swiper_wrapper {
   position: relative;
 
@@ -167,11 +171,10 @@ html {
 
 
 
-.swiper-slide-active {
-  background-color: lightcoral;
-}
+
 .swiper-wrapper{
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
+

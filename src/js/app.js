@@ -108,6 +108,17 @@ header_feedback.addEventListener("click", (e) => {
  
 // })
 
+addEventListener("resize", (e) => {
+  var slide = document.querySelectorAll(".swiper-slide");
+  var size = window.innerWidth;
+  if (size <= 780) {
+    slide.forEach(element => {
+      element.classList.add("container")
+    });
+  }
+
+})
+
 $(document).ready(function() {
   // Assign some jquery elements we'll need
   var $swiper = $(".swiper-container");
@@ -118,9 +129,19 @@ $(document).ready(function() {
   // the stack, needed for correct animation style
 
   var mySwiper = new Swiper ('.swiper-container', {
-    slidesPerView: 1.7,
-    spaceBetween: 140,
+    spaceBetween: 170,
+    slidesPerView: 1,
+    breakpoints: {
+      310: {
+          slidesPerView: 1,
+      },
+      768: {
+          slidesPerView: 2,
+      },
 
+    },
+
+    autoHeight: true,
     watchOverflow: true,
     centeredSlides: true,
 

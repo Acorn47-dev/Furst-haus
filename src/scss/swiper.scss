@@ -718,7 +718,14 @@ button.swiper-pagination-bullet {
 .swiper-flip .swiper-slide-active .swiper-slide-active {
     pointer-events: auto
 }
-
+@media(max-width: 1024px){
+    .swiper-button-prev{
+      display: none;
+    }
+    .swiper-button-next{
+        display: none;
+      }
+  }
 .swiper-flip .swiper-slide-shadow-bottom,
 .swiper-flip .swiper-slide-shadow-left,
 .swiper-flip .swiper-slide-shadow-right,

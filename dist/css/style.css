@@ -2288,10 +2288,8 @@ p {
   display: block;
 }
 .swiper-slide.swiper-slide-active {
-  transform: scale(10);
-  background: #fc0;
   -webkit-transform: scale(2);
-  transform: scale(1.15) !important;
+  transform: scale(1.2) !important;
   filter: none;
   /* для IE6-9 */
   filter: grayscale(0);
@@ -2394,14 +2392,10 @@ html {
   box-sizing: inherit;
 }
 
-.swiper-slide-active {
-  background-color: lightcoral;
-}
-
 .swiper-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .houses-especially {
@@ -3895,6 +3889,14 @@ button.swiper-pagination-bullet {
   pointer-events: auto;
 }
 
+@media (max-width: 1024px) {
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+}
 .swiper-flip .swiper-slide-shadow-bottom,
 .swiper-flip .swiper-slide-shadow-left,
 .swiper-flip .swiper-slide-shadow-right,
