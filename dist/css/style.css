@@ -2099,15 +2099,24 @@ p {
   background-position: center;
   background-size: cover;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .houses-hero {
     height: 448px;
-    margin-bottom: 148px;
   }
 }
 
 .col-up {
   margin-bottom: 260px;
+}
+@media (max-width: 586px) {
+  .col-up {
+    margin-bottom: 240px;
+  }
+}
+@media (max-width: 450px) {
+  .col-up {
+    margin-bottom: 79px;
+  }
 }
 .col-down__preface {
   font-family: "Open Sans";
@@ -2119,6 +2128,14 @@ p {
   margin-bottom: -13px;
   color: #FFFFFF;
 }
+@media (max-width: 450px) {
+  .col-down__preface {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 34px;
+    margin-bottom: 2px;
+  }
+}
 .col-down__text {
   font-family: "Open Sans";
   font-style: normal;
@@ -2127,6 +2144,14 @@ p {
   line-height: 123px;
   color: #FFFFFF;
   margin-bottom: 40px;
+}
+@media (max-width: 450px) {
+  .col-down__text {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
 }
 .col-down__price {
   font-family: "Open Sans";
@@ -2360,21 +2385,16 @@ p {
   width: 100%;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  transform: translateY(-50%);
-  top: 50% !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin: 0 auto !important;
-}
-
-.swiper-button-prev {
-  left: -54vw !important;
-}
-
-.swiper-button-next {
-  left: 54vw !important;
+.swiper-buttons {
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex !important;
+  justify-content: space-between !important;
+  margin: 0 auto;
+  background: red !important;
 }
 
 .swiper-slide img {
@@ -2388,7 +2408,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 

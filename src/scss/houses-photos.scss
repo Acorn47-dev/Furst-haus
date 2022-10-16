@@ -1,7 +1,6 @@
 .swiper {
   width: 100%;
   height: 100%;
-
 }
 
 .swiper-container {
@@ -13,19 +12,14 @@
 .swiper-container>.swiper-slide__content {
   position: absolute;
   top: 0;
-  
 }
 
+.swiper-slide {}
 
 .swiper-slide {
-
-}
-.swiper-slide  {
   // min-height: 434px;
-
-width: 100%;
-height: 100%;
-
+  width: 100%;
+  height: 100%;
   text-align: center;
   transition: all 200ms linear;
   filter: gray;
@@ -37,9 +31,6 @@ height: 100%;
   &.swiper-slide-active {
     // min-height: 485px;
     // min-width: 970px;
-
-
-
     -webkit-transform: scale(2);
     transform: scale(1.2) !important;
     filter: none;
@@ -47,9 +38,11 @@ height: 100%;
     filter: grayscale(0);
     /* W3C */
     filter: drop-shadow(0px 0px 75px rgba(0, 0, 0, 0.3));
+    
   }
 
   img {
+    // margin: 50px !important;
     display: block;
     width: 100%;
     height: 100%;
@@ -67,12 +60,11 @@ height: 100%;
 
 .swiper-content {
   max-width: 970px;
-
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  // .swiper-content__col
 
+  // .swiper-content__col
   &__col {
     display: flex;
     flex-direction: column;
@@ -87,9 +79,7 @@ height: 100%;
   font-size: 15px;
   line-height: 20px;
   margin-bottom: 5px;
-
   /* Текст */
-
   color: #968989;
 }
 
@@ -99,11 +89,8 @@ height: 100%;
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
-
   /* Второй цвет */
-
   color: #D64B58;
-
 }
 
 .swiper-page {
@@ -122,35 +109,23 @@ height: 100%;
   }
 }
 
-
 .swiper_wrapper {
   position: relative;
-
   width: 100%;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  transform: translateY(-50%);
-  top: 50% !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin: 0 auto !important;
-}
+.swiper {}
 
-.swiper-button-prev {
-  left: -54vw !important;
-}
-
-.swiper-button-next {
-  left: 54vw !important;
-}
-.swiper {
-
-}
-
-.swiper-slide {
-
+.swiper-buttons {
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex !important;
+  justify-content: space-between !important;
+  margin: 0 auto;
+  background: red !important;
 }
 
 .swiper-slide img {
@@ -163,18 +138,15 @@ height: 100%;
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-
-
-
-
-
-.swiper-wrapper{
+.swiper-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 70px;
 }
-
