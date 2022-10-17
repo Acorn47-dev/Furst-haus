@@ -173,9 +173,7 @@ z-index: 1;
     // .contact-item__text
 
     &__text {
-        &:hover{
-            text-decoration: underline;
-        }
+
     }
 }
 
@@ -197,9 +195,7 @@ z-index: 1;
 .contact-text {
     position: relative;
     z-index: 2;
-    &:hover{
-        text-decoration: underline;
-    }
+
     // .contact-text__title
 
     &__title {

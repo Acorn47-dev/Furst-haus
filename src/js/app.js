@@ -14,6 +14,21 @@ document.addEventListener("DOMContentLoaded", (e) => {
   var header_feedback = document.querySelector(".header-feedback");
   var dialog = document.querySelector(".dialog");
   var body = document.body;
+  var col_main_button = document.querySelector(".col-main__button");
+  col_main_button.addEventListener("click", (e) => {
+
+    const scrollTarget = document.querySelector(".about");
+
+    const topOffset = document.querySelector('.about').offsetHeight;
+    // const topOffset = 0; // если не нужен отступ сверху 
+    const elementPosition = scrollTarget.getBoundingClientRect().top -80;
+    const offsetPosition = elementPosition - topOffset;
+
+    window.scrollBy({
+        top: elementPosition,
+        behavior: 'smooth'
+    });
+  })
   var dialog_bckgr = document.querySelector(".dialog-background");
   var dialog_close = document.querySelector(".dialog-close");
   var swiper_button_next = document.querySelector(".swiper-button-next");
