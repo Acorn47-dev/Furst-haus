@@ -807,6 +807,7 @@
 .history-item {
   display: grid;
   flex-direction: column;
+  overflow: hidden;
   background: #FFFFFF;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
   max-width: 470px;
@@ -826,6 +827,7 @@
   align-items: center;
   justify-content: center;
   background: #D64B58;
+  z-index: 2;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -839,6 +841,10 @@
   max-height: 337px;
   width: 100%;
   height: 100%;
+  transition: all 0.3s;
+}
+.history-item__img:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 1500px) {
   .history-item__img {
