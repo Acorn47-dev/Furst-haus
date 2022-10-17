@@ -4,6 +4,11 @@
   height: 80px;
   background: #FFFFFF;
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
 }
 @media (max-width: 425px) {
   .header {
@@ -56,17 +61,17 @@
 }
 
 .list-link {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   text-align: center;
   color: #322123;
+  transition: all 0.3s;
   padding-bottom: 10%;
 }
 .list-link:hover {
-  text-decoration: underline;
+  color: #D64B58;
 }
 
 .--active {
@@ -82,7 +87,6 @@
   height: 48px;
   background: none;
   border: 1px solid #D64B58;
-  font-family: "Open Sans";
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
@@ -215,7 +219,6 @@
   margin-bottom: 20px;
 }
 .burger-list__link {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -236,6 +239,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-top: 80px;
   margin-bottom: 153px;
 }
 @media (max-width: 741px) {
@@ -284,6 +288,7 @@
   display: flex;
   align-items: center;
   margin-right: 97px;
+  transition: all 0.1s ease-in;
 }
 @media (max-width: 811px) {
   .info-item {
@@ -299,6 +304,9 @@
   .info-item {
     margin-right: 30px;
   }
+}
+.info-item:hover {
+  transform: scale(1.1);
 }
 .info-item__icon {
   height: 21px;
@@ -335,9 +343,6 @@
   .info-item__text {
     display: none;
   }
-}
-.info-item__text:hover {
-  text-decoration: underline;
 }
 
 .col-main__foreword {
@@ -474,7 +479,6 @@
   flex-direction: column;
 }
 .col__about-text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -561,6 +565,9 @@
     grid-column: 1/span 2;
   }
 }
+.advantages-item:hover {
+  transform: scale(1.04);
+}
 @media (max-width: 768px) {
   .advantages-item:last-child {
     grid-column: auto;
@@ -583,6 +590,13 @@
 }
 .advantages-item:hover .advantages-item__text {
   color: #fff;
+  transition: all 0.3s;
+}
+.advantages-item:hover .advantages-item__title {
+  color: #fff;
+  transition: all 0.3s;
+}
+.advantages-item:hover .advantages-item__icon {
   transition: all 0.3s;
 }
 .advantages-item__content {
@@ -616,7 +630,6 @@
   object-fit: contain;
 }
 .advantages-item__title {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -639,7 +652,6 @@
   }
 }
 .advantages-item__text {
-  font-family: "Open Sans";
   font-weight: 400;
   font-size: 17px;
   line-height: 23px;
@@ -660,7 +672,6 @@
 }
 
 .col__partners-text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -815,7 +826,6 @@
   align-items: center;
   justify-content: center;
   background: #D64B58;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -857,7 +867,6 @@
   height: 100%;
 }
 .history-main__descr {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -872,7 +881,6 @@
   }
 }
 .history-main__title {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -953,7 +961,6 @@
   background: #D64B58;
   border: none;
   box-shadow: 0px 0px 24px rgba(214, 75, 88, 0.35);
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -992,7 +999,6 @@
   margin-right: 15px;
 }
 .main-item__text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1026,7 +1032,6 @@
 }
 
 .col__facades-text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -1212,7 +1217,6 @@
 }
 .description-item__number {
   margin-bottom: 2px;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -1221,7 +1225,6 @@
   color: #D64B58;
 }
 .description-item__title {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -1235,7 +1238,6 @@
   }
 }
 .description-item__descr {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -1493,7 +1495,6 @@
   text-decoration: underline;
 }
 .contact-text__title {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -1501,7 +1502,6 @@
   color: #FFFFFF;
 }
 .contact-text__descr {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -1785,7 +1785,6 @@
 .impressum-text {
   max-width: 741px;
   width: 100%;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1849,7 +1848,6 @@ p {
 }
 
 .houses-list-descr {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -1904,7 +1902,6 @@ p {
   align-items: center;
   justify-content: center;
   background: #D64B58;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -1946,7 +1943,6 @@ p {
   height: 100%;
 }
 .houses-list-main__descr {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -1961,7 +1957,6 @@ p {
   }
 }
 .houses-list-main__title {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -2039,7 +2034,6 @@ p {
   background: #D64B58;
   border: none;
   box-shadow: 0px 0px 24px rgba(214, 75, 88, 0.35);
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -2080,7 +2074,6 @@ p {
   margin-right: 15px;
 }
 .main-item__text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -2098,6 +2091,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-top: 80px;
 }
 @media (max-width: 450px) {
   .houses-hero {
@@ -2119,7 +2113,6 @@ p {
   }
 }
 .col-down__preface {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 50px;
@@ -2137,7 +2130,6 @@ p {
   }
 }
 .col-down__text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 90px;
@@ -2154,7 +2146,6 @@ p {
   }
 }
 .col-down__price {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -2176,7 +2167,6 @@ p {
   /* Второй цвет */
   border: none;
   background: #D64B58;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -2234,7 +2224,6 @@ p {
   object-fit: cover;
 }
 .houses-info__item-text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -2266,7 +2255,6 @@ p {
   margin-right: 24px;
 }
 .col__houses-descr-text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -2345,7 +2333,6 @@ p {
 }
 
 .swiper-title {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -2356,7 +2343,6 @@ p {
 }
 
 .swiper-subtitle {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2366,7 +2352,6 @@ p {
 }
 
 .swiper-page {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -2513,7 +2498,6 @@ html {
   margin-bottom: 45px;
 }
 .descr-one__text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -2540,7 +2524,6 @@ html {
   margin-right: 13px;
 }
 .descr-three__text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -2550,7 +2533,6 @@ html {
   margin-right: 69px;
 }
 .descr-three__value {
-  font-family: "Open Sans";
   font-style: normal;
   font-size: 17px;
   line-height: 23px;
@@ -2569,7 +2551,6 @@ html {
 }
 .descr-four__number {
   padding-right: 9px;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -2580,7 +2561,6 @@ html {
   border-right: 1px solid #968989;
 }
 .descr-four__text {
-  font-family: "Open Sans";
   font-style: normal;
   font-style: normal;
   font-weight: 400;
@@ -2591,7 +2571,6 @@ html {
   color: #322123;
 }
 .descr-four__value {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -2673,7 +2652,6 @@ html {
   }
 }
 .houses-video__block-title {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 60px;
@@ -2704,7 +2682,6 @@ html {
 }
 .houses-video__block-text {
   max-width: 521px;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -2750,7 +2727,6 @@ html {
   height: 54.92px;
   background: #D64B58;
   border: none;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -2844,7 +2820,6 @@ html {
   align-items: center;
   justify-content: center;
   background: #D64B58;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -2886,7 +2861,6 @@ html {
   height: 100%;
 }
 .houses-other-main__descr {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -2901,7 +2875,6 @@ html {
   }
 }
 .houses-other-main__title {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -2979,7 +2952,6 @@ html {
   background: #D64B58;
   border: none;
   box-shadow: 0px 0px 24px rgba(214, 75, 88, 0.35);
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -3018,7 +2990,6 @@ html {
   margin-right: 15px;
 }
 .main-item__text {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -3057,7 +3028,6 @@ html {
 
 .error-descr {
   max-width: 506px;
-  font-family: "Open Sans";
   font-weight: 400;
   font-size: 17px;
   line-height: 23px;
@@ -3077,7 +3047,6 @@ html {
   width: 100%;
   background: #D64B58;
   border: none;
-  font-family: "Open Sans";
   font-weight: 700;
   font-size: 17px;
   line-height: 23px;
@@ -3131,7 +3100,6 @@ html {
 .dialog-title {
   margin: 0 auto;
   text-align: center;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -3145,7 +3113,6 @@ html {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -3163,7 +3130,6 @@ html {
   flex-direction: column;
 }
 .dialog-form .dialog-input {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -3181,7 +3147,6 @@ html {
   outline: none;
   background: none;
   border: 1px solid #696969;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -3953,7 +3918,6 @@ body.--block {
 .page {
   margin-top: 70px;
   margin-bottom: 55px;
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -4018,6 +3982,7 @@ body.--block {
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Open Sans";
 }
 
 body {
@@ -4029,7 +3994,6 @@ body {
 }
 
 .section-number {
-  font-family: "Open Sans";
   font-weight: 800;
   font-size: 13px;
   line-height: 18px;
@@ -4038,7 +4002,6 @@ body {
 }
 
 .title {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 30px;
@@ -4051,7 +4014,6 @@ body {
 }
 
 .title-alpha {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
