@@ -15,6 +15,19 @@ document.addEventListener("DOMContentLoaded", (e) => {
   var dialog = document.querySelector(".dialog");
   var body = document.body;
   var col_main_button = document.querySelector(".col-main__button");
+  var col_down_button = document.querySelector(".col-down__button");
+  col_down_button.addEventListener("click", (e) => {
+
+    const scrollTarget = document.querySelector(".houses-descr");
+    const topOffset = document.querySelector('.houses-descr').offsetHeight;
+    const elementPosition = scrollTarget.getBoundingClientRect().top -80;
+    const offsetPosition = elementPosition - topOffset;
+
+    window.scrollBy({
+        top: elementPosition,
+        behavior: 'smooth'
+    });
+  })
   col_main_button.addEventListener("click", (e) => {
 
     const scrollTarget = document.querySelector(".about");
