@@ -6,7 +6,7 @@
     backdrop-filter: blur(3.5px);
     /* Note: backdrop-filter has minimal browser support */
     display: none;
-
+z-index: 1002;
     &.--active {
         display: block;
 
@@ -16,7 +16,7 @@
 .dialog {
     position: relative;
     display: none;
-
+z-index: 1003;
     &.--active {
         display: block;
     }

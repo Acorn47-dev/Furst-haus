@@ -14,34 +14,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   var header_feedback = document.querySelector(".header-feedback");
   var dialog = document.querySelector(".dialog");
   var body = document.body;
-  var col_main_button = document.querySelector(".col-main__button");
-  var col_down_button = document.querySelector(".col-down__button");
-  col_down_button.addEventListener("click", (e) => {
 
-    const scrollTarget = document.querySelector(".houses-descr");
-    const topOffset = document.querySelector('.houses-descr').offsetHeight;
-    const elementPosition = scrollTarget.getBoundingClientRect().top -80;
-    const offsetPosition = elementPosition - topOffset;
-
-    window.scrollBy({
-        top: elementPosition,
-        behavior: 'smooth'
-    });
-  })
-  col_main_button.addEventListener("click", (e) => {
-
-    const scrollTarget = document.querySelector(".about");
-
-    const topOffset = document.querySelector('.about').offsetHeight;
-    // const topOffset = 0; // если не нужен отступ сверху 
-    const elementPosition = scrollTarget.getBoundingClientRect().top -80;
-    const offsetPosition = elementPosition - topOffset;
-
-    window.scrollBy({
-        top: elementPosition,
-        behavior: 'smooth'
-    });
-  })
   var dialog_bckgr = document.querySelector(".dialog-background");
   var dialog_close = document.querySelector(".dialog-close");
   var swiper_button_next = document.querySelector(".swiper-button-next");
@@ -73,32 +46,64 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
   })
   if (page_html == "index.html") {
+
+    var col_main_button = document.querySelector(".col-main__button");
+
+    col_main_button.addEventListener("click", (e) => {
+
+      const scrollTarget = document.querySelector(".about");
+
+      const topOffset = document.querySelector('.about').offsetHeight;
+      // const topOffset = 0; // если не нужен отступ сверху 
+      const elementPosition = scrollTarget.getBoundingClientRect().top - 80;
+      const offsetPosition = elementPosition - topOffset;
+
+      window.scrollBy({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    })
+
     let center = [53.338764, 9.875054];
 
-function init() {
-  let map = new ymaps.Map('map-test', {
-    center: center,
-    zoom: 17
-  });
+    function init() {
+      let map = new ymaps.Map('map-test', {
+        center: center,
+        zoom: 17
+      });
 
-  map.controls.remove('geolocationControl'); // удаляем геолокацию
-  map.controls.remove('searchControl'); // удаляем поиск
-  map.controls.remove('trafficControl'); // удаляем контроль трафика
-  map.controls.remove('typeSelector'); // удаляем тип
-  map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-  map.controls.remove('zoomControl'); // удаляем контрол зуммирования
-  map.controls.remove('rulerControl'); // удаляем контрол правил
-  map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
-}
+      map.controls.remove('geolocationControl'); // удаляем геолокацию
+      map.controls.remove('searchControl'); // удаляем поиск
+      map.controls.remove('trafficControl'); // удаляем контроль трафика
+      map.controls.remove('typeSelector'); // удаляем тип
+      map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+      map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+      map.controls.remove('rulerControl'); // удаляем контрол правил
+      map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+    }
 
-ymaps.ready(init);
+    ymaps.ready(init);
   }
   if (page_html == "houses.html") {
+
+    var col_down_button = document.querySelector(".col-down__button");
+    col_down_button.addEventListener("click", (e) => {
+
+      const scrollTarget = document.querySelector(".houses-descr");
+      const topOffset = document.querySelector('.houses-descr').offsetHeight;
+      const elementPosition = scrollTarget.getBoundingClientRect().top - 80;
+      const offsetPosition = elementPosition - topOffset;
+
+      window.scrollBy({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    })
 
     var video_inside = document.querySelector(".video-inside");
     var video = document.querySelector(".houses-video__video");
     var video_btn = document.querySelector(".houses-video__video-pause");
-    
+
     video_inside.addEventListener("click", (e) => {
       if (video.paused) {
         video_btn.style.display = "none";
@@ -108,7 +113,7 @@ ymaps.ready(init);
         video.pause();
       }
     })
-    }
+  }
 
 })
 
@@ -142,7 +147,7 @@ function adaptive_arrows() {
 
 
 if (page_html == "houses.html") {
- // !!! при работе со swiper нельзя задавать свои размеры слайду в css
+  // !!! при работе со swiper нельзя задавать свои размеры слайду в css
   $(document).ready(function () {
 
     var mySwiper = new Swiper('.swiper-container', {
@@ -151,12 +156,13 @@ if (page_html == "houses.html") {
       breakpoints: { // Breakpoint помогает делать swiper адаптивным
         310: {  // 310 - разрешение, при котором будут происходить изменение
           slidesPerView: 1,
-        },  
+        },
         1025: {
           slidesPerView: 1.69,
-        }, 
+        },
       },
       autoHeight: true,  // авто размер слайдера
+
       watchOverflow: true,
       centeredSlides: true,  // центрирование слайда
       navigation: {   // с помощью navigation задаются кнопки, которые должны переключать слайды
@@ -171,6 +177,6 @@ if (page_html == "houses.html") {
     });
   });
   function changetext() {
-    swiper_page.innerHTML = "0"+page[page_index]+"<span>| 03</span>";
+    swiper_page.innerHTML = "0" + page[page_index] + "<span>| 03</span>";
   }
 }

@@ -15,7 +15,7 @@
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
 
-    @media(max-width: 1500px) {
+    @media(max-width: 1100px) {
         grid-template-columns: repeat(1, 1fr);
     }
     @media(max-width: 768px) {
@@ -43,8 +43,9 @@ overflow: hidden;
     height: 100%;
     position: relative;
 
-    @media(max-width: 1500px) {
+    @media(max-width: 1100px) {
         max-width: 100%;
+       
     }
 
     // .history-content__price
@@ -114,7 +115,6 @@ overflow: hidden;
     // .history-main__descr
 
     &__descr {
-       
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
@@ -171,8 +171,8 @@ overflow: hidden;
 
         grid-template-columns: repeat(2, 1fr);
 
-        @media(max-width: 1500px) {
-            column-gap: 50px;
+        @media(max-width: 1100px) {
+
             display: flex;
         }
         @media(max-width: 768px){
@@ -207,7 +207,13 @@ overflow: hidden;
         background: #D64B58;
         box-shadow: 0px 0px 5px rgba(214, 75, 88, 0.3);
 
-        @media(max-width: 767px) {
+        @media(max-width: 1375px) {
+            display: none;
+        }
+        @media(max-width: 1100px) {
+            display: flex;
+        }
+        @media(max-width: 760px) {
             display: none;
         }
     }
@@ -260,7 +266,7 @@ overflow: hidden;
 .main-item {
     display: flex;
     // .main-item__icon
-
+    margin-right: 30px;
     &__icon {
         margin-right: 15px;
     }
