@@ -1749,6 +1749,10 @@
   object-fit: contain;
 }
 
+.footer-link {
+  color: #FFFFFF;
+}
+
 .footer-bottom {
   width: 100%;
   display: flex;
