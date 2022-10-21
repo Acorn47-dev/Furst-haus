@@ -2598,6 +2598,15 @@ html {
 .descr-two__item {
   display: flex;
 }
+.descr-two__item svg {
+  fill: #322123;
+}
+.descr-two__item.tab-active {
+  color: #D64B58;
+}
+.descr-two__item.tab-active svg {
+  fill: #D64B58;
+}
 .descr-two__item:not(:last-child) {
   margin-right: 50px;
 }

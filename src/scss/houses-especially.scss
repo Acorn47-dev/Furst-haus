@@ -155,6 +155,15 @@ color: #322123;
     // .descr-two__item
 
     &__item {
+        svg{
+            fill: #322123;
+        }
+        &.tab-active{
+            color: #D64B58;
+            svg{
+                fill: #D64B58;;
+            }
+        }
         display: flex;
         &:not(:last-child){
             margin-right: 50px;

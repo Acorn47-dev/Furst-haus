@@ -87,6 +87,17 @@ document.addEventListener("DOMContentLoaded", (e) => {
   }
   if (page_html == "houses.html") {
 
+    var descr_two_item = document.querySelectorAll(".descr-two__item");
+    descr_two_item.forEach(el => {
+      el.addEventListener("click", (e) => {
+        var current = e.currentTarget;
+        descr_two_item.forEach(remove_el => {
+          remove_el.classList.remove("tab-active")
+        })
+        current.classList.add("tab-active")
+      })
+    });
+
     var col_down_button = document.querySelector(".col-down__button");
     col_down_button.addEventListener("click", (e) => {
 
