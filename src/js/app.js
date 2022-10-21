@@ -7,9 +7,9 @@ var page_html = path_html.split("/").pop();
 
 
 var page_index = 0;
-var swiper_page;
+var swiper_page, swiper_subtitle;
 var page = [1, 2, 3];
-
+var name = ["Terrasse", "Eingang", "Vorderansicht"];
 document.addEventListener("DOMContentLoaded", (e) => {
   var header_feedback = document.querySelector(".header-feedback");
   var dialog = document.querySelector(".dialog");
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   var swiper_button_prev = document.querySelector(".swiper-button-prev");
   var dialog_close = document.querySelector(".dialog-close");
   swiper_page = document.querySelector(".swiper-page");
+  swiper_subtitle = document.querySelector(".swiper-subtitle");
   header_feedback.addEventListener("click", (e) => {
     body.classList.add("--block")
     dialog.classList.add("--active")
@@ -177,6 +178,7 @@ if (page_html == "houses.html") {
     });
   });
   function changetext() {
+    swiper_subtitle.innerHTML = name[page_index];
     swiper_page.innerHTML = "0" + page[page_index] + "<span>| 03</span>";
   }
 }

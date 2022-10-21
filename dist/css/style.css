@@ -814,6 +814,9 @@
   height: 100%;
   position: relative;
 }
+.history-item:hover .history-item__img {
+  transform: scale(1.1);
+}
 @media (max-width: 1100px) {
   .history-item {
     max-width: 100%;
@@ -842,9 +845,6 @@
   width: 100%;
   height: 100%;
   transition: all 0.3s;
-}
-.history-item__img:hover {
-  transform: scale(1.1);
 }
 @media (max-width: 1500px) {
   .history-item__img {
@@ -1909,6 +1909,14 @@ p {
   margin-bottom: 74px;
 }
 
+.houses-list {
+  margin-bottom: 150px;
+}
+
+.houses-list-title {
+  margin-bottom: 74px;
+}
+
 .houses-list-list {
   margin-bottom: 30px;
   display: grid;
@@ -1942,6 +1950,9 @@ p {
   height: 100%;
   position: relative;
 }
+.houses-list-item:hover .houses-list-item__img {
+  transform: scale(1.1);
+}
 @media (max-width: 1100px) {
   .houses-list-item {
     max-width: 100%;
@@ -1970,9 +1981,6 @@ p {
   width: 100%;
   height: 100%;
   transition: all 0.3s;
-}
-.houses-list-item__img:hover {
-  transform: scale(1.1);
 }
 @media (max-width: 1500px) {
   .houses-list-item__img {
@@ -2078,6 +2086,10 @@ p {
   /* Второй цвет */
   background: #D64B58;
   box-shadow: 0px 0px 5px rgba(214, 75, 88, 0.3);
+  transition: all 0.3s;
+}
+.main-col__btn:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 1375px) {
   .main-col__btn {
@@ -2826,6 +2838,57 @@ html {
 
 .houses-other {
   margin-bottom: 150px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.houses-other-title {
+  margin-bottom: 74px;
+}
+
+.houses-other-background {
+  position: absolute;
+}
+
+.houses-other-content__header {
+  margin-top: 189px;
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+.houses-other-title-alpha {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.houses-other-descr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  margin: 0 auto;
+  color: #968989;
+  max-width: 506px;
+}
+
+.houses-other {
+  margin-bottom: 150px;
+}
+
+.houses-other-title {
+  margin-bottom: 74px;
+}
+
+.houses-other {
+  margin-bottom: 150px;
+}
+
+.houses-other-title {
+  margin-bottom: 74px;
+}
+
+.houses-other {
+  margin-bottom: 150px;
 }
 
 .houses-other-title {
@@ -2865,6 +2928,9 @@ html {
   height: 100%;
   position: relative;
 }
+.houses-other-item:hover .houses-other-item__img {
+  transform: scale(1.1);
+}
 @media (max-width: 1100px) {
   .houses-other-item {
     max-width: 100%;
@@ -2893,9 +2959,6 @@ html {
   width: 100%;
   height: 100%;
   transition: all 0.3s;
-}
-.houses-other-item__img:hover {
-  transform: scale(1.1);
 }
 @media (max-width: 1500px) {
   .houses-other-item__img {
@@ -3001,6 +3064,10 @@ html {
   /* Второй цвет */
   background: #D64B58;
   box-shadow: 0px 0px 5px rgba(214, 75, 88, 0.3);
+  transition: all 0.3s;
+}
+.main-col__btn:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 1375px) {
   .main-col__btn {

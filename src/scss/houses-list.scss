@@ -63,6 +63,17 @@
 .houses-list-title{
     margin-bottom: 74px;
 }
+.houses-list {
+    margin-bottom: 150px;
+}
+
+.container {}
+
+.houses-list-content-list {}
+
+.houses-list-title{
+    margin-bottom: 74px;
+}
 .houses-list-list {
     margin-bottom: 30px;
     display: grid;
@@ -88,6 +99,12 @@
 }
 
 .houses-list-item {
+
+    &:hover{
+        .houses-list-item__img{
+            transform: scale(1.1);
+        }
+    }
     display: grid;
     flex-direction: column;
 overflow: hidden;
@@ -125,9 +142,7 @@ overflow: hidden;
 
     &__img {
         overflow: hidden;
-        &:hover{
-            transform: scale(1.1);
-        }
+
         max-width: 470px;
         max-height: 337px;
         width: 100%;
@@ -260,7 +275,10 @@ overflow: hidden;
 
         background: #D64B58;
         box-shadow: 0px 0px 5px rgba(214, 75, 88, 0.3);
-
+        transition: all 0.3s;
+        &:hover{
+          transform: scale(1.1);
+        }
         @media(max-width: 1375px) {
             display: none;
         }
