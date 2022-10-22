@@ -8,6 +8,12 @@
         margin-bottom: 79px;
     }
 
+    &__info{
+        display: none;
+        &.info--active{
+            display: block;
+        }
+    }
     // .houses-especially__content
 
     &__content {

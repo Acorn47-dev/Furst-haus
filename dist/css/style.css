@@ -2494,6 +2494,12 @@ html {
 .houses-especially__header {
   margin-bottom: 79px;
 }
+.houses-especially__info {
+  display: none;
+}
+.houses-especially__info.info--active {
+  display: block;
+}
 .houses-especially__content {
   display: flex;
   width: 100%;

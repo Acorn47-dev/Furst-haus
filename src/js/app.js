@@ -88,8 +88,18 @@ document.addEventListener("DOMContentLoaded", (e) => {
   if (page_html == "houses.html") {
 
     var descr_two_item = document.querySelectorAll(".descr-two__item");
-    descr_two_item.forEach(el => {
+    var info1 = document.querySelector(".info-1");
+    var info2 = document.querySelector(".info-2");
+    descr_two_item.forEach((el, index) => {
       el.addEventListener("click", (e) => {
+        info1.classList.remove("info--active");
+        info2.classList.remove("info--active");
+        if (index == 0) {
+          info1.classList.add("info--active");
+        }
+        if (index == 1) {
+          info2.classList.add("info--active");
+        }
         var current = e.currentTarget;
         descr_two_item.forEach(remove_el => {
           remove_el.classList.remove("tab-active")
