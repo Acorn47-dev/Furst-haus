@@ -2503,6 +2503,7 @@ html {
 .houses-especially__content {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .houses-especially__content {
