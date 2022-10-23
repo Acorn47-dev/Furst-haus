@@ -10,6 +10,19 @@ var page_index = 0;
 var swiper_page, swiper_subtitle;
 var page = [1, 2, 3];
 var name = ["Terrasse", "Eingang", "Vorderansicht"];
+
+window.onload = function () {
+  let preloader = document.querySelector(".preloader");
+  preloader.style.opacity = 0;
+  var body = document.body;
+  body.classList.remove("--block")
+
+  gsap.from('.header', {
+    opacity: 0,
+    duration: 12
+  })
+}
+
 document.addEventListener("DOMContentLoaded", (e) => {
   var header_feedback = document.querySelector(".header-feedback");
   var dialog = document.querySelector(".dialog");

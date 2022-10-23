@@ -5,17 +5,17 @@
     "title": "Furst Haus"
     })
 
-    <body>
+    <body class="--block">
         <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
         </script>
-                <script
-                src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-                integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
-                crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+            integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
         <script src="js/app.min.js"></script>
         <div class="wrapper">
             @@include('html/header.html',{
-                "link":"0"
+            "link":"0"
             })
             @@include('html/main_hero.html',{})
             @@include('html/main_about.html',{})
@@ -27,9 +27,10 @@
             @@include('html/main_certificates.html',{})
             @@include('html/main_feedback.html',{})
             @@include('html/footer.html',{
-                "link":"0"
+            "link":"0"
             })
             @@include('html/dialog.html',{})
+            @@include('html/preloader.html',{})
         </div>
 
     </body>
