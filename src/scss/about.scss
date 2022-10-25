@@ -16,6 +16,15 @@
 		// .about-content__col
 
 		&__col {
+                
+            &:nth-child(1){
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            &:nth-child(2){
+                transform: translateX(100%);
+                opacity: 0;
+            }
 		}
         @media(max-width: 1152px){
             grid-template-columns: repeat(1, 1fr);
@@ -27,6 +36,7 @@
 .col {
     display: flex;
     flex-direction: column;
+
 		// .col__about-number
 
 		&__about-number {

@@ -58,6 +58,8 @@
 
 
     &__image {
+        opacity: 0;
+        transform: scale(0);
         max-width: 470px;
         max-height: 667px;
         width: 100%;

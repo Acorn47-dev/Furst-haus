@@ -7,8 +7,8 @@
   position: fixed;
   width: 100%;
   left: 0;
-  top: 0;
   z-index: 1000;
+  top: -100%;
 }
 @media (max-width: 425px) {
   .header {
@@ -287,6 +287,7 @@
 .info-item {
   display: flex;
   align-items: center;
+  transform: scale(0);
   margin-right: 97px;
   transition: all 0.1s ease-in;
 }
@@ -352,6 +353,7 @@
   font-size: 13px;
   line-height: 18px;
   color: #FFFFFF;
+  transform: translateX(-100%);
   opacity: 0.8;
 }
 .col-main__title {
@@ -363,6 +365,8 @@
   /* or 99px */
   max-width: 1010px;
   letter-spacing: 0.03em;
+  opacity: 0;
+  transform: translateY(50%);
   color: #FFFFFF;
   margin-bottom: 29px;
 }
@@ -406,6 +410,8 @@
   opacity: 0.8;
   color: #FFFFFF;
   margin-bottom: 48px;
+  opacity: 0;
+  transform: translateY(50%);
 }
 @media (max-width: 768px) {
   .col-main__promise {
@@ -418,6 +424,8 @@
   }
 }
 .col-main__button {
+  opacity: 0;
+  transform: translateY(50%);
   width: 250px;
   height: 56.2px;
   background: #D64B58;
@@ -462,6 +470,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+.about-content__col:nth-child(1) {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.about-content__col:nth-child(2) {
+  transform: translateX(100%);
+  opacity: 0;
 }
 @media (max-width: 1152px) {
   .about-content {
@@ -556,6 +572,8 @@
   }
 }
 .advantages-item {
+  opacity: 0;
+  transform: scale(0);
   background: rgba(199, 199, 199, 0.2);
   transition: all 0.3s;
   width: 100%;
@@ -805,6 +823,8 @@
   }
 }
 .history-item {
+  transform: translateY(100%);
+  opacity: 0;
   display: grid;
   flex-direction: column;
   overflow: hidden;
@@ -980,6 +1000,8 @@
   background: #D64B58;
   border: none;
   box-shadow: 0px 0px 24px rgba(214, 75, 88, 0.35);
+  transform: translateY(100%);
+  opacity: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -1313,6 +1335,8 @@
   width: 100%;
 }
 .certificates-col__image {
+  opacity: 0;
+  transform: scale(0);
   max-width: 470px;
   max-height: 667px;
   width: 100%;
@@ -4079,7 +4103,6 @@ button.swiper-pagination-bullet {
   height: 100%;
   background: white;
   transition: all 1s;
-  display: none;
 }
 
 .preloader-content {

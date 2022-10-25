@@ -16,11 +16,141 @@ window.onload = function () {
   preloader.style.opacity = 0;
   var body = document.body;
   body.classList.remove("--block")
-
-  gsap.from('.header', {
-    opacity: 0,
-    duration: 12
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to(".preloader", {
+    scrollTrigger: {
+      trigger: ".animation-0",
+      start: "top +=700",
+      toggleActions: "play none none none"
+    },
+    display: "none",
+    duration: 1
   })
+  gsap.to(".header", {
+    scrollTrigger: {
+      trigger: ".animation-0",
+      start: "top +=700",
+      toggleActions: "play none none none"
+    },
+    top: 0,
+    delay: 1,
+    duration: 1
+  })
+  if (page_html == "index.html") {
+    gsap.to(".info-item", {
+      scrollTrigger: {
+        trigger: ".animation-0",
+        start: "top +=700",
+        toggleActions: "play none none none"
+      },
+      scale: 1,
+      delay: 1,
+      duration: 1
+    })
+    gsap.to(".col-main__foreword", {
+      scrollTrigger: {
+        trigger: ".animation-0",
+        start: "top +=700",
+        toggleActions: "play none none none"
+      },
+      translateX: 0,
+      delay: 1,
+      duration: 1
+    })
+    gsap.to(".col-main__title", {
+      scrollTrigger: {
+        trigger: ".animation-0",
+        start: "top +=700",
+        toggleActions: "play none none none"
+      },
+      opacity: 1,
+      translateY: 0,
+      delay: 1,
+      duration: 1
+
+    })
+    gsap.to(".col-main__promise", {
+      scrollTrigger: {
+        trigger: ".animation-0",
+        start: "top +=700",
+        toggleActions: "play none none none"
+      },
+      opacity: 0.8,
+      delay: 2,
+      translateY: 0,
+      duration: 1
+    })
+    gsap.to(".col-main__button", {
+      scrollTrigger: {
+        trigger: ".animation-0",
+        start: "top +=700",
+        toggleActions: "play none none none"
+      },
+      opacity: 1,
+      delay: 2,
+      translateY: 0,
+      duration: 1
+    })
+    gsap.to(".about-content__col", {
+      scrollTrigger: {
+        trigger: ".about-content__col",
+        start: "top +=700",
+        toggleActions: "play none none none"
+      },
+      opacity: 1,
+      translateX: 0,
+      duration: 1
+    })
+    gsap.to(".advantages-item", {
+      scrollTrigger: {
+        trigger: ".advantages-item",
+        start: "top +=700",
+        toggleActions: "play none none none"
+      },
+      opacity: 1,
+      scale: 1,
+      duration: 1
+    })
+
+    gsap.to(".history-list__item", {
+      scrollTrigger: {
+        trigger: ".history-list__item",
+        start: "top +=700",
+        toggleActions: "play none none none"
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1
+    })
+    gsap.to(".history-button", {
+      scrollTrigger: {
+        trigger: ".history-button",
+        start: "top +=700",
+        toggleActions: "play none none none"
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1
+    })
+    gsap.to(".certificates-col__image", {
+      scrollTrigger: {
+        trigger: ".certificates-col__image",
+        start: "top +=700",
+        toggleActions: "play none none none"
+      },
+      opacity: 1,
+      scale: 1,
+      duration: 1
+    })
+  } else if (page_html == "houses.html") {
+    adaptive_arrows();
+  }
+  
+  //
+  //certificates-col__image
+  //partners-content__col
+
+
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {

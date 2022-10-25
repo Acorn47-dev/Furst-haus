@@ -61,7 +61,7 @@
 .info-item {
     display: flex;
     align-items: center;
-
+    transform: scale(0);
     margin-right: 97px;
 
     @media(max-width: 811px) {
@@ -129,9 +129,9 @@
         font-weight: 400;
         font-size: 13px;
         line-height: 18px;
-
+      
         color: #FFFFFF;
-
+ transform: translateX(-100%);
         opacity: 0.8;
     }
 
@@ -147,7 +147,8 @@
         max-width: 1010px;
 
         letter-spacing: 0.03em;
-
+        opacity: 0;
+        transform: translateY(50%);
         color: #FFFFFF;
         margin-bottom: 29px;
 
@@ -184,6 +185,8 @@
         opacity: 0.8;
         color: #FFFFFF;
         margin-bottom: 48px;
+                opacity: 0;
+                transform: translateY(50%);
         @media(max-width: 768px) {
             margin-bottom: 16px;
         }
@@ -195,6 +198,8 @@
     // .col-main__button
 
     &__button {
+        opacity: 0;
+        transform: translateY(50%);
         width: 250px;
         height: 56.2px;
         background: #D64B58;
