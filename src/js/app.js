@@ -36,10 +36,10 @@ window.onload = function () {
     delay: 1,
     duration: 1
   })
-  if (page_html == "index.html") {
+  if (page_html == "") {
     gsap.to(".info-item", {
       scrollTrigger: {
-        trigger: ".animation-0",
+        trigger: ".info-item",
         start: "top +=700",
         toggleActions: "play none none none"
       },
@@ -142,10 +142,12 @@ window.onload = function () {
       scale: 1,
       duration: 1
     })
+
   } else if (page_html == "houses.html") {
+
     adaptive_arrows();
   }
-  
+
   //
   //certificates-col__image
   //partners-content__col
@@ -178,6 +180,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   var about = document.querySelector(".about");
   var button = document.querySelector(".col-main__button");
   var button = document.querySelector(".col-main__button");
+
   var header_burger = document.querySelector(".header-burger");
   var burger = document.querySelector(".burger");
   header_burger.addEventListener("click", (e) => {
@@ -189,8 +192,20 @@ document.addEventListener("DOMContentLoaded", (e) => {
       burger.classList.add("_active");
     }
   })
-  if (page_html == "index.html") {
+  if (page_html == "") {
+    var mySwiperr = new Swiper('.mySwiper', {
+      spaceBetween: 30, // расстояние между слайдарами
+      // slidesPerView: 1.69, // размер слайдера 
+      slidesPerView: 4,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      watchOverflow: true,
+      centeredSlides: true,  // центрирование слайда
 
+    })
     var col_main_button = document.querySelector(".col-main__button");
 
     col_main_button.addEventListener("click", (e) => {
@@ -335,6 +350,7 @@ if (page_html == "houses.html") {
         prevEl: '.swiper-button-prev',
       }
     })
+
     mySwiper.on('slideChange', function (e) { // слушатель переключений слайдов
       page_index = mySwiper.activeIndex;
       changetext();
@@ -346,3 +362,4 @@ if (page_html == "houses.html") {
     swiper_page.innerHTML = "0" + page[page_index] + "<span>| 03</span>";
   }
 }
+

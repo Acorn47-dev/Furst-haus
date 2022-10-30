@@ -61,7 +61,7 @@
 .info-item {
     display: flex;
     align-items: center;
-    transform: scale(0);
+    transform: scale(0) ;
     margin-right: 97px;
 
     @media(max-width: 811px) {
@@ -75,7 +75,8 @@
     }
     transition: all 0.1s ease-in;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.1) !important;
+        
     }
     // .info-item__icon
 

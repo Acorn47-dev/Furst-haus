@@ -1,6 +1,9 @@
+
+.houses-photos{
 .swiper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
+}
 }
 
 .swiper-container {
@@ -16,7 +19,7 @@
 
 .swiper-slide {}
 
-.swiper-slide {
+.swiper-slide.houses-photos-slide{
   // min-height: 434px;
   width: 100%;
   height: 100%;
