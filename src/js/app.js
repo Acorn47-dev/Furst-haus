@@ -37,7 +37,7 @@ window.onload = function () {
 
     duration: 0.7
   })
-  if (page_html == "") {
+  if (page_html == "" || page_html == "index.html") {
     gsap.to(".info-item", {
       scrollTrigger: {
         trigger: ".info-item",
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       burger.classList.add("_active");
     }
   })
-  if (page_html == "") {
+  if (page_html == "" || page_html == "index.html") {
     var mySwiperr = new Swiper('.mySwiper', {
       spaceBetween: 30, // расстояние между слайдарами
       // slidesPerView: 1.69, // размер слайдера 
