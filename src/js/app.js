@@ -15,7 +15,8 @@ window.onload = function () {
   let preloader = document.querySelector(".preloader");
   preloader.style.opacity = 0;
   var body = document.body;
-  body.classList.remove("--block")
+  var html = document.getElementsByTagName("html")[0];;
+  html.classList.remove("--block")
   gsap.registerPlugin(ScrollTrigger);
   gsap.to(".preloader", {
     scrollTrigger: {
@@ -33,8 +34,8 @@ window.onload = function () {
       toggleActions: "play none none none"
     },
     top: 0,
-    delay: 1,
-    duration: 1
+
+    duration: 0.7
   })
   if (page_html == "") {
     gsap.to(".info-item", {
@@ -104,7 +105,7 @@ window.onload = function () {
     gsap.to(".advantages-item", {
       scrollTrigger: {
         trigger: ".advantages-item",
-        start: "top +=700",
+        start: "top +=900",
         toggleActions: "play none none none"
       },
       opacity: 1,
@@ -115,7 +116,7 @@ window.onload = function () {
     gsap.to(".history-list__item", {
       scrollTrigger: {
         trigger: ".history-list__item",
-        start: "top +=700",
+        start: "top +=1200",
         toggleActions: "play none none none"
       },
       opacity: 1,
@@ -125,7 +126,7 @@ window.onload = function () {
     gsap.to(".history-button", {
       scrollTrigger: {
         trigger: ".history-button",
-        start: "top +=700",
+        start: "top +=900",
         toggleActions: "play none none none"
       },
       opacity: 1,
@@ -135,7 +136,7 @@ window.onload = function () {
     gsap.to(".certificates-col__image", {
       scrollTrigger: {
         trigger: ".certificates-col__image",
-        start: "top +=700",
+        start: "top +=1100",
         toggleActions: "play none none none"
       },
       opacity: 1,
@@ -159,7 +160,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   var header_feedback = document.querySelector(".header-feedback");
   var dialog = document.querySelector(".dialog");
   var body = document.body;
-
+  var html = document.getElementsByTagName("html")[0];;
   var dialog_bckgr = document.querySelector(".dialog-background");
   var dialog_close = document.querySelector(".dialog-close");
   var swiper_button_next = document.querySelector(".swiper-button-next");
@@ -168,13 +169,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
   swiper_page = document.querySelector(".swiper-page");
   swiper_subtitle = document.querySelector(".swiper-subtitle");
   header_feedback.addEventListener("click", (e) => {
-    body.classList.add("--block")
+    html.classList.add("--block")
     dialog.classList.add("--active")
     dialog_bckgr.classList.add("--active")
   })
   dialog_close.addEventListener("click", (e) => {
     dialog.classList.remove("--active")
-    body.classList.remove("--block")
+    html.classList.remove("--block")
     dialog_bckgr.classList.remove("--active")
   })
   var about = document.querySelector(".about");
@@ -197,6 +198,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
       spaceBetween: 30, // расстояние между слайдарами
       // slidesPerView: 1.69, // размер слайдера 
       slidesPerView: 4,
+      autoHeight: true,
+      autoWeight: true,
       loop: true,
       pagination: {
         el: ".swiper-pagination",

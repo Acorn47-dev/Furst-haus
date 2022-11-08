@@ -21,18 +21,33 @@
 @import "houses-especially";
 @import "houses-video";
 @import "houses-other";
-@import "error";
+
 @import "dialog";
 
 @import "preloader";
+@import "error";
 $md1: 768px;
 $maxWidthContainer: 1530px;
 
-body.--block{
-  overflow-y: hidden;
-  
-}
 
+
+body {
+  position: relative;
+  overflow-y: hidden;
+ overflow-x: hidden;
+}
+html {
+  overflow-y: overlay;
+   overflow-x: hidden;
+}
+html.--block {
+  overflow-y: hidden;
+}
+body {
+  position: relative;
+  overflow-y: hidden;
+
+}
 .page {
   margin-top: 70px;
   margin-bottom: 55px;

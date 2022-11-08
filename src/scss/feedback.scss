@@ -56,13 +56,16 @@
 .one {
     width: 50vw;
     height: 100%;
+position: relative;
     background-image: url("../img/feedback-background.jpg");
     background-position: center;
     background-size: cover;
+
     @media(max-width: 1152px) {
         width: 100vw;
         height: 550px;
     }
+
     @media(max-width: 425px) {
         width: 100vw;
         height: 683px;
@@ -114,7 +117,9 @@
 
     // .col-contact__content
 
-    &__content {}
+    &__content {
+
+    }
 }
 
 .col {
@@ -146,8 +151,8 @@
 }
 
 .contact-item {
-position: relative;
-z-index: 1;
+    position: relative;
+    z-index: 1;
     height: 100%;
     display: flex;
     margin-bottom: 36px;
@@ -172,15 +177,159 @@ z-index: 1;
 
     // .contact-item__text
 
-    &__text {
+    &__text {}
+}
+
+.feedback-dialog-content {
+    padding: 40px 33px 70px 33px;
+
+    @media(max-width: 1410px) {
+       
+        padding: 40px 0px 70px 0px;
+    }
+            @media(max-width: 1152px) {
+   padding: 40px 33px 70px 33px;
+            }
+}
+
+.feedback-dialog-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+
+    /* Основной цвет */
+    text-align: center;
+    color: #322123;
+    margin-bottom: 9px;
+
+}
+
+.feedback-dialog-text {
+    max-width: 403px;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 49px;
+
+    /* Текст */
+
+    color: #968989;
+
+}
+
+.feedback-dialog {
+    position: absolute;
+    top: 0;
+z-index: 10;
+    transform: translate(0, -10%);
+
+
+    @media(max-width: 1410px) {
+
+          transform: translateY(-100px);
+    }
+        @media(max-width: 1152px) {
+            transform: translateY(100px);
+            transform: translate(0, 105%);
+        }
+    background: #FFFFFF;
+    box-shadow: 0px 0px 110px rgba(0, 0, 0, 0.25);
+}
+
+.feedback-dialog-input {
+    border: none;
+    outline: none;
+    max-width: 302px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 233;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    padding-bottom: 4px;
+    margin-bottom: 43px;
+}
+
+.feedback-dialog-form {
+
+    // .feedback-dialog-form__name
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+    &__name {
+        border-bottom: 1px solid #D64B58;
+        color: #D64B58;
+
+        &::placeholder {
+            color: #D64B58;
+        }
+    }
+
+    // .feedback-dialog-form__email
+
+    &__email {
+        border-bottom: 1px solid #322123;
+        color: #322123;
+
+        &::placeholder {
+            color: #322123;
+        }
+    }
+
+    // .feedback-dialog-form__message
+
+    &__message {
+        border-bottom: 1px solid #968989;
+        color: #968989;
+
+        opacity: 0.5;
+
+        &::placeholder {
+            color: #968989;
+        }
+    }
+
+    // .feedback-dialog-form__button
+
+    &__button {
+        background: #D64B58;
+        box-shadow: 0px 0px 24px rgba(214, 75, 88, 0.4);
+        color: #fff;
+        width: 100%;
+        max-width: 302px;
+        height: 55px;
+        border: none;
+        margin: 0 auto;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+
+        color: #FFFFFF;
 
     }
 }
+
+
+
 
 .col-contact__content {
     padding: 120px 0px 100px 0px;
 
     height: 100%;
+
 }
 
 .col-contact {
@@ -199,12 +348,12 @@ z-index: 1;
     // .contact-text__title
 
     &__title {
-       
+
         font-style: normal;
         font-weight: 700;
         font-size: 17px;
         line-height: 23px;
-       
+
         color: #FFFFFF;
 
 
@@ -213,7 +362,7 @@ z-index: 1;
     // .contact-text__descr
 
     &__descr {
-       
+
         font-style: normal;
         font-weight: 300;
         font-size: 15px;

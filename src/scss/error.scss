@@ -1,8 +1,5 @@
 .error {
-    background-image: url(../img/error-background.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative
 }
 
 .container {}
@@ -18,6 +15,31 @@
     margin-bottom: 30px;
 
 }
+
+
+
+
+
+
+
+.error {
+    position: relative
+}
+
+
+
+
+
+.lines {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    z-index: -20;
+    width: 100%;
+    height: 100%
+}
+
+
 
 .title.error-title {
     color: #D64B58;
@@ -62,4 +84,45 @@
     text-align: center;
     color: #FFFFFF;
     filter: drop-shadow(0px 0px 24px rgba(214, 75, 88, 0.35));
+}
+
+@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+
+
+.error {
+    position: relative
+}
+
+
+.error .lines path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 5s linear forwards infinite;
+    animation: dash 5s linear forwards infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    color: #d64b5965;
+    width: 100%
+}
+
+
+
+.lines {
+     position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: -20;
+    width: 100%;
+    height: 100%
 }
