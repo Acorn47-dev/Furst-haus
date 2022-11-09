@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     var mySwiperr = new Swiper('.mySwiper', {
       spaceBetween: 30, // расстояние между слайдарами
       // slidesPerView: 1.69, // размер слайдера 
-      slidesPerView: 4,
+      slidesPerView: 3,
       autoHeight: true,
       autoWeight: true,
       loop: true,
@@ -207,6 +207,35 @@ document.addEventListener("DOMContentLoaded", (e) => {
       },
       watchOverflow: true,
       centeredSlides: true,  // центрирование слайда
+      breakpoints: { // Breakpoint помогает делать swiper адаптивным
+        0: {
+          slidesPerView: 1,
+        },
+        666: {
+          slidesPerView: 1.4,
+        },
+        768: {
+          slidesPerView: 1.6,
+        },
+        1000: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 2.5,
+        },
+        1300: {
+          slidesPerView: 2.7,
+        },
+        1500: {
+          slidesPerView: 3,
+        },
+        1700: {
+          slidesPerView: 3.5,
+        },
+        1880: {
+          slidesPerView: 4,
+        },
+      },
 
     })
     var col_main_button = document.querySelector(".col-main__button");
