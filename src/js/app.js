@@ -232,8 +232,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
         1700: {
           slidesPerView: 3.5,
         },
-        1880: {
-          slidesPerView: 4,
+        1800: {
+          slidesPerView: 3.7,
         },
       },
 
