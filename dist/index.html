@@ -669,10 +669,10 @@
                             <div class="feedback-dialog-content">
                                 <div class="feedback-dialog-title">Bestellen Sie einen Anruf</div>
                                 <div class="feedback-dialog-text">Hinterlassen Sie Ihre Daten und wir werden Sie kontaktieren!</div>
-                                <form class="feedback-dialog-form">
-                                    <input type="text" class="feedback-dialog-form__name feedback-dialog-input" placeholder="Name">
-                                    <input type="text" class="feedback-dialog-form__email feedback-dialog-input" placeholder="E-mail">
-                                    <input type="text" class="feedback-dialog-form__message feedback-dialog-input" placeholder="Nachricht">
+                                <form action="sendemail.php" class="feedback-dialog-form">
+                                    <input type="text" class="feedback-dialog-form__name    input-name  feedback-dialog-input" placeholder="Name">
+                                    <input type="text" class="feedback-dialog-form__email   input-email feedback-dialog-input" placeholder="E-mail">
+                                    <input type="text" class="feedback-dialog-form__message input-news  feedback-dialog-input" placeholder="Nachricht">
                                     <button type="submit" class="feedback-dialog-form__button">Absenden</button>
                                 </form>
                             </div>
@@ -747,9 +747,9 @@
             <div class="dialog-title">Bestellen Sie einen Anruf</div>
             <div class="dialog-subtitle">Hinterlassen Sie Ihre Daten und wir werden Sie kontaktieren!</div>
             <form action="sendemail.php" class="dialog-form">
-                <input type="text" class="dialog-form__input-name dialog-input" placeholder="Name">
-                <input type="text" class="dialog-form__input-email dialog-input" placeholder="Email">
-                <input type="text" class="dialog-form__input-news dialog-input" placeholder="Nachricht">
+                <input type="text" class="dialog-form__input-name  input-name dialog-input" placeholder="Name">
+                <input type="text" class="dialog-form__input-email input-email dialog-input" placeholder="Email">
+                <input type="text" class="dialog-form__input-news  input-news dialog-input" placeholder="Nachricht">
                 <button type="submit" class="dialog-form__input-send">Absenden</button>
             </form>
         </div>

@@ -1,7 +1,7 @@
 <?php
-$news = $_POST['dialog-form__input-news'];
-$email = $_POST['dialog-form__input-email'];
-$name = $_POST['dialog-form__input-name'];
+$news = $_POST['input-news'];
+$email = $_POST['input-email'];
+$name = $_POST['input-name'];
 if ($email === "") {
     $email = "none";
 }
