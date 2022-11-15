@@ -105,11 +105,10 @@ window.onload = function () {
     gsap.to(".advantages-item", {
       scrollTrigger: {
         trigger: ".advantages-item",
-        start: "top +=900",
+        start: "top +=800",
         toggleActions: "play none none none"
       },
       opacity: 1,
-      scale: 1,
       duration: 1
     })
 
